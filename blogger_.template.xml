@@ -2170,6 +2170,14 @@ ul.share-b{grid-gap:10px}
                 <b:section class='xdfcb-main-menu' id='xdfcb-main-menu' maxwidgets='1' name='Header Menu' showaddelement='no'>
                   <b:widget id='LinkList200' locked='false' title='' type='LinkList' visible='true'>
                     <b:widget-settings>
+                      <b:widget-setting name='text-10'/>
+                      <b:widget-setting name='sorting'>NONE</b:widget-setting>
+                      <b:widget-setting name='link-1'>https://ibaguette.com/cheatsheets</b:widget-setting>
+                      <b:widget-setting name='link-2'>https://ibaguette.com/cheatsheets/gcse</b:widget-setting>
+                      <b:widget-setting name='link-12'/>
+                      <b:widget-setting name='link-0'>/</b:widget-setting>
+                      <b:widget-setting name='link-11'/>
+                      <b:widget-setting name='link-10'>#</b:widget-setting>
                       <b:widget-setting name='text-9'>Our Discord Bots</b:widget-setting>
                       <b:widget-setting name='link-9'>/b</b:widget-setting>
                       <b:widget-setting name='text-8'>Discord Server</b:widget-setting>
@@ -2187,10 +2195,8 @@ ul.share-b{grid-gap:10px}
                       <b:widget-setting name='text-4'>__AQA Geography Paper 1+2</b:widget-setting>
                       <b:widget-setting name='text-7'>YouTube</b:widget-setting>
                       <b:widget-setting name='text-6'>_All A Level Subject Content</b:widget-setting>
-                      <b:widget-setting name='sorting'>NONE</b:widget-setting>
-                      <b:widget-setting name='link-1'>https://ibaguette.com/cheatsheets</b:widget-setting>
-                      <b:widget-setting name='link-2'>https://ibaguette.com/cheatsheets/gcse</b:widget-setting>
-                      <b:widget-setting name='link-0'>/</b:widget-setting>
+                      <b:widget-setting name='text-11'/>
+                      <b:widget-setting name='text-12'/>
                     </b:widget-settings>
                     <b:includable id='main' var='this'>
       <b:include name='widget-title'/>
@@ -2879,7 +2885,7 @@ ul.share-b{grid-gap:10px}
   <b:include name='reportAbuse'/>
 </b:includable>
           </b:widget>
-          <b:widget id='Profile1' locked='false' title='Contributors' type='Profile' visible='false'>
+          <b:widget id='Profile1' locked='false' title='Contributors' type='Profile' version='2' visible='false'>
             <b:widget-settings>
               <b:widget-setting name='showaboutme'>false</b:widget-setting>
               <b:widget-setting name='showlocation'>false</b:widget-setting>
@@ -3290,7 +3296,7 @@ ul.share-b{grid-gap:10px}
   </div>
 </b:includable>
           </b:widget>
-          <b:widget id='BlogSearch1' locked='false' title='Search This Blog' type='BlogSearch' visible='true'>
+          <b:widget id='BlogSearch1' locked='false' title='Search This Blog' type='BlogSearch' version='2' visible='true'>
             <b:includable id='main' var='this'>
       <b:include name='widget-title'/>
       <b:include name='content'/>
