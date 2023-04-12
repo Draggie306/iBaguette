@@ -1450,7 +1450,7 @@ ul.share-b{grid-gap:10px}
       <!-- Ajax Pagination on Index -->
       <div class='blog-pager' id='blog-pager'>
         <b:if cond='data:olderPageUrl'>
-          <a class='blog-pager-older-link load-more btn' expr:data-load='data:olderPageUrl.canonical' href='#' id='xdfcb-load-more-link'><b:include data='{ message: &quot;loadMorePosts&quot; }' name='theme-custom-lang'/></a>
+          <a class='blog-pager-older-link load-more btn' expr:href='data:olderPageUrl.canonical.replace(&quot;http://&quot;, &quot;https://&quot;)' data-load='data:olderPageUrl.canonical.replace(&quot;http://&quot;, &quot;https://&quot;)' id='xdfcb-load-more-link'><b:include data='{ message: &quot;loadMorePosts&quot; }' name='theme-custom-lang'/></a>
           <span class='loading'><div class='loader'/></span>
           <span class='no-more load-more btn'><data:messages.noResultsFound/></span>
           <b:else/>
@@ -2045,6 +2045,7 @@ ul.share-b{grid-gap:10px}
     </b:includable>
   </b:defaultmarkup>
 </b:defaultmarkups>
+<script async src="https://fundingchoicesmessages.google.com/i/pub-2271085116982799?ers=1" nonce="R6D9h_9tVlVAZYt2fW0NGA"></script><script nonce="R6D9h_9tVlVAZYt2fW0NGA">(function() {function signalGooglefcPresent() {if (!window.frames['googlefcPresent']) {if (document.body) {const iframe = document.createElement('iframe'); iframe.style = 'width: 0; height: 0; border: none; z-index: -1000; left: -1000px; top: -1000px;'; iframe.style.display = 'none'; iframe.name = 'googlefcPresent'; document.body.appendChild(iframe);} else {setTimeout(signalGooglefcPresent, 0);}}}signalGooglefcPresent();})();</script>
 </head>
 <body>
 <b:include name='theme-body-class'/>
