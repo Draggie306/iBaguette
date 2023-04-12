@@ -2168,35 +2168,47 @@ ul.share-b{grid-gap:10px}
                   </div>
                 </b:if>
                 <b:section class='xdfcb-main-menu' id='xdfcb-main-menu' maxwidgets='1' name='Header Menu' showaddelement='no'>
-                  <b:widget id='LinkList200' locked='false' title='' type='LinkList' visible='true'>
+                  <b:widget id='LinkList200' locked='false' title='Navbar' type='LinkList' visible='true'>
                     <b:widget-settings>
-                      <b:widget-setting name='text-10'/>
+                      <b:widget-setting name='text-10'>__OCR Geography</b:widget-setting>
+                      <b:widget-setting name='link-17'>https://discord.gg/GfetCXH</b:widget-setting>
+                      <b:widget-setting name='link-16'>/search/label/YouTube</b:widget-setting>
                       <b:widget-setting name='sorting'>NONE</b:widget-setting>
+                      <b:widget-setting name='link-18'>https://www.youtube.com/watch?v=dQw4w9WgXcQ</b:widget-setting>
                       <b:widget-setting name='link-1'>https://ibaguette.com/cheatsheets</b:widget-setting>
+                      <b:widget-setting name='link-13'>https://ibaguette.com/cheatsheets</b:widget-setting>
                       <b:widget-setting name='link-2'>https://ibaguette.com/cheatsheets/gcse</b:widget-setting>
-                      <b:widget-setting name='link-12'/>
+                      <b:widget-setting name='link-12'>https://ibaguette.com/cheatsheets/alevel</b:widget-setting>
+                      <b:widget-setting name='link-15'>/b</b:widget-setting>
                       <b:widget-setting name='link-0'>/</b:widget-setting>
-                      <b:widget-setting name='link-11'/>
-                      <b:widget-setting name='link-10'>#</b:widget-setting>
-                      <b:widget-setting name='text-9'>Our Discord Bots</b:widget-setting>
-                      <b:widget-setting name='link-9'>/b</b:widget-setting>
-                      <b:widget-setting name='text-8'>Discord Server</b:widget-setting>
-                      <b:widget-setting name='link-7'>/search/label/YouTube</b:widget-setting>
-                      <b:widget-setting name='link-8'>https://discord.gg/GfetCXH</b:widget-setting>
-                      <b:widget-setting name='link-5'>https://ibaguette.com/cheatsheets/gcse</b:widget-setting>
-                      <b:widget-setting name='link-6'>https://ibaguette.com/cheatsheets/alevel</b:widget-setting>
+                      <b:widget-setting name='link-14'>https://ibaguette.com/cheatsheets/alevel</b:widget-setting>
+                      <b:widget-setting name='link-11'>https://ibaguette.com/cheatsheets</b:widget-setting>
+                      <b:widget-setting name='link-10'>https://ibaguette.com/cheatsheets/alevel/geography/all</b:widget-setting>
+                      <b:widget-setting name='text-9'>_A Level</b:widget-setting>
+                      <b:widget-setting name='link-9'>https://ibaguette.com/cheatsheets/alevel</b:widget-setting>
+                      <b:widget-setting name='text-8'>__View more GCSE resources...</b:widget-setting>
+                      <b:widget-setting name='link-7'>https://ibaguette.com/cheatsheets</b:widget-setting>
+                      <b:widget-setting name='link-8'>https://ibaguette.com/cheatsheets/gcse</b:widget-setting>
+                      <b:widget-setting name='link-5'>https://ibaguette.com/cheatsheets/gcse/geography/Paper2</b:widget-setting>
+                      <b:widget-setting name='link-6'>https://ibaguette.com/cheatsheets/gcse/geography/Paper1and2</b:widget-setting>
                       <b:widget-setting name='link-3'>https://ibaguette.com/cheatsheets/gcse/ComputerScience</b:widget-setting>
-                      <b:widget-setting name='link-4'>https://ibaguette.com/cheatsheets/gcse/geography/Paper1and2</b:widget-setting>
+                      <b:widget-setting name='link-4'>https://ibaguette.com/cheatsheets/gcse/geography/Paper1</b:widget-setting>
                       <b:widget-setting name='text-1'>Revision Resources</b:widget-setting>
                       <b:widget-setting name='text-0'>Home</b:widget-setting>
                       <b:widget-setting name='text-3'>__OCR Computer Science</b:widget-setting>
                       <b:widget-setting name='text-2'>_GCSE</b:widget-setting>
-                      <b:widget-setting name='text-5'>__View more...</b:widget-setting>
-                      <b:widget-setting name='text-4'>__AQA Geography Paper 1+2</b:widget-setting>
-                      <b:widget-setting name='text-7'>YouTube</b:widget-setting>
-                      <b:widget-setting name='text-6'>_All A Level Subject Content</b:widget-setting>
-                      <b:widget-setting name='text-11'/>
-                      <b:widget-setting name='text-12'/>
+                      <b:widget-setting name='text-5'>__AQA Geography: Paper 2</b:widget-setting>
+                      <b:widget-setting name='text-4'>__AQA Geography: Paper 1</b:widget-setting>
+                      <b:widget-setting name='text-7'>__</b:widget-setting>
+                      <b:widget-setting name='text-6'>__AQA Geography: Papers 1+2</b:widget-setting>
+                      <b:widget-setting name='text-15'>Our Discord Bots</b:widget-setting>
+                      <b:widget-setting name='text-16'>YouTube Content</b:widget-setting>
+                      <b:widget-setting name='text-17'>Discord Server</b:widget-setting>
+                      <b:widget-setting name='text-18'>Disable Ads</b:widget-setting>
+                      <b:widget-setting name='text-11'>__Computer Science</b:widget-setting>
+                      <b:widget-setting name='text-12'>__Maths, Physics, Chemistry</b:widget-setting>
+                      <b:widget-setting name='text-13'>__</b:widget-setting>
+                      <b:widget-setting name='text-14'>__View more A Level resources...</b:widget-setting>
                     </b:widget-settings>
                     <b:includable id='main' var='this'>
       <b:include name='widget-title'/>
@@ -2744,7 +2756,7 @@ ul.share-b{grid-gap:10px}
               <b:widget-setting name='numItemsToShow'>10</b:widget-setting>
               <b:widget-setting name='showThumbnails'>true</b:widget-setting>
               <b:widget-setting name='showSnippets'>true</b:widget-setting>
-              <b:widget-setting name='timeRange'>ALL_TIME</b:widget-setting>
+              <b:widget-setting name='timeRange'>LAST_MONTH</b:widget-setting>
             </b:widget-settings>
             <b:includable id='main' var='this'>
             <b:include name='widget-title'/>
