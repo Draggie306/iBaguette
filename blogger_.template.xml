@@ -14,7 +14,7 @@ Author Url:   https://probloggertemplates.com/
 -----------------------------------------------*/
 
 /*-- Customize Options (Start) --
-<Variable name="keycolor" description="Main Color" type="color" default="#ff4422" value="#ff4422"/>
+<Variable name="keycolor" description="Main Color" type="color" default="#00acff" value="#00acff"/>
 <Group description="Theme Options" selector="body">
     <Variable name="boxed" description="Boxed Mode" type="length" default="0px" min="0px" max="1px" value="0px"/>
     <Variable name="sidebar" description="Left Sidebar" type="length" default="0px" min="0px" max="1px" value="0px"/>
@@ -33,20 +33,20 @@ Author Url:   https://probloggertemplates.com/
 </Group>
 <Group description="Background" selector="body">
 	<Variable name="background.color" description="Body Background (Boxed)" type="color" default="#f4f6fa"  value="#f4f6fa"/>
-    <Variable name="outer.bg" description="Outer Background" type="color" default="#ffffff"  value="#ffffff"/>
+    <Variable name="outer.bg" description="Outer Background" type="color" default="#ffffff"  value="#f4f6fa"/>
 </Group>
 <Group description="Colors" selector="body">
-    <Variable name="main.color" description="Main Color" type="color" default="#ff4422" value="#ff4422"/>
+    <Variable name="main.color" description="Main Color" type="color" default="#00acff" value="#00acff"/>
     <Variable name="title.color" description="Title Color" type="color" default="#0a0a0a" value="#0a0a0a"/>
-    <Variable name="title.hover.color" description="Title Hover Color" type="color" default="$(main.color)" value="#ff4422"/>
+    <Variable name="title.hover.color" description="Title Hover Color" type="color" default="$(main.color)" value="#f4006f"/>
     <Variable name="meta.color" description="Meta Color" type="color" default="#a7aab2" value="#a7aab2"/>
-    <Variable name="meta.link" description="Meta Link Color" type="color" default="$(main.color)" value="#ff4422"/>
+    <Variable name="meta.link" description="Meta Link Color" type="color" default="$(main.color)" value="#f4006f"/>
     <Variable name="text.color" description="Text Color" type="color" default="#505666"  value="#505666"/>
     <Variable name="border.color" description="Border Color" type="color" default="#efefef"  value="#efefef"/>
 </Group>
 <Group description="Header" selector="#header-wrapper">
     <Variable name="header.height" description="Height" type="length" default="60px" min="50px" max="70px" value="60px"/>
-    <Variable name="header.bg1" description="Background (Left)" type="color" default="#ff4422" value="#ff4422"/>
+    <Variable name="header.bg1" description="Background (Left)" type="color" default="#00acff" value="#00acff"/>
     <Variable name="header.bg2" description="Background (Right)" type="color" default="#f4006f" value="#f4006f"/>
     <Variable name="header.color" description="Color" type="color" default="#ffffff" value="#ffffff"/>
     <Variable name="header.hover.color" description="Hover Color" type="color" default="#fedde3" value="#fedde3"/>
@@ -56,24 +56,24 @@ Author Url:   https://probloggertemplates.com/
 </Group>
 <Group description="Sub Menu" selector="#header-wrapper">
     <Variable name="submenu.bg" description="Background" type="color" default="#0a0a0a" value="#0a0a0a"/>
-    <Variable name="submenu.color" description="Color" type="color" default="#ffffff" value="#ffffff"/>
-    <Variable name="submenu.hover.color" description="Hover Color" type="color" default="$(main.color)" value="#ff4422"/>
+    <Variable name="submenu.color" description="Color" type="color" default="#ffffff" value="#ffffff"/> 
+    <Variable name="submenu.hover.color" description="Hover Color" type="color" default="$(main.color)" value="#00acff"/>
 </Group>
 <Group description="Header Bar" selector="nav.headerbar-wrap">
     <Variable name="headerbar.bg" description="Background" type="color" default="#ffffff" value="#ffffff"/>
     <Variable name="headerbar.title" description="Title Color" type="color" default="$(title.color)" value="#0a0a0a"/>
     <Variable name="headerbar.color" description="Link Color" type="color" default="$(text.color)" value="#505666"/>
-    <Variable name="headerbar.hover.color" description="Link Hover Color" type="color" default="$(main.color)" value="#ff4422"/>
+    <Variable name="headerbar.hover.color" description="Link Hover Color" type="color" default="$(main.color)" value="#00acff"/>
     <Variable name="social.bg" description="Social Background" type="color" default="$(submenu.bg)" value="#0a0a0a"/>
     <Variable name="social.color" description="Social Color" type="color" default="$(submenu.color)" value="#ffffff"/>
 </Group>
 <Group description="Mobile Menu" selector="body">
-    <Variable name="mobilemenu.bg" description="Background" type="color" default="#ffffff" value="#ffffff"/>
+    <Variable name="mobilemenu.bg" description="Background" type="color" default="#ffffff" value="#f4f6fa"/>
     <Variable name="mobilemenu.color" description="Color" type="color" default="$(title.color)" value="#0a0a0a"/>
-    <Variable name="mobilemenu.hover.color" description="Hover Color" type="color" default="$(main.color)" value="#ff4422"/>
+    <Variable name="mobilemenu.hover.color" description="Hover Color" type="color" default="$(main.color)" value="#00acff"/>
 </Group>
 <Group description="Widgets" selector="body">
-    <Variable name="widget.title" description="Title Color" type="color" default="$(main.color)" value="#ff4422"/>
+    <Variable name="widget.title" description="Title Color" type="color" default="$(main.color)" value="#00acff"/>
     <Variable name="widget.title.size" description="Font Size" type="length" default="22px" min="18px" max="27px" value="22px"/>
 </Group>
 <Group description="Blog Posts" selector="body">
@@ -92,17 +92,17 @@ Author Url:   https://probloggertemplates.com/
 <Group description="Footer" selector="#footer-wrapper">
     <Variable name="footer.bg" description="Background" type="color" default="#0a0a0a" value="#0a0a0a"/>
     <Variable name="footer.color" description="Color" type="color" default="#ffffff" value="#ffffff"/>
-    <Variable name="footer.hover.color" description="Hover Color" type="color" default="$(main.color)" value="#ff4422"/>
+    <Variable name="footer.hover.color" description="Hover Color" type="color" default="$(main.color)" value="#00acff"/>
     <Variable name="footer.text.color" description="Text Color" type="color" default="#a7aab2" value="#a7aab2"/>
     <Variable name="footer.border" description="Border Color" type="color" default="#1b1b1b" value="#1b1b1b"/>
 </Group>
 <Group description="Footer Bar" selector="div.footer-bar">
     <Variable name="footerbar.bg" description="Background" type="color" default="#000000" value="#000000"/>
     <Variable name="footerbar.color" description="Color" type="color" default="#ffffff" value="#ffffff"/>
-    <Variable name="footerbar.hover.color" description="Hover Color" type="color" default="$(main.color)" value="#ff4422"/>
+    <Variable name="footerbar.hover.color" description="Hover Color" type="color" default="$(main.color)" value="#00acff"/>
 </Group>
 <Group description="Buttons" selector="body">
-    <Variable name="btn.bg" description="Background" type="color" default="$(main.color)" value="#ff4422"/>
+    <Variable name="btn.bg" description="Background" type="color" default="$(main.color)" value="#00acff"/>
     <Variable name="btn.color" description="Color" type="color" default="#ffffff" value="#ffffff"/>
 </Group>
 <Group description="Fix Blur (Fonts)" selector="body">
@@ -128,7 +128,7 @@ Author Url:   https://probloggertemplates.com/
 <Variable name="body.background.color" description="Comments Background" hideEditor="true" type="color" default="transparent"  value="transparent"/>
 <Variable name="body.title.color" description="Comments Color" hideEditor="true" type="color" default="$(title.color)" value="#0a0a0a"/>
 <Variable name="body.text.color" description="Comments Text Color" hideEditor="true" type="color" default="$(text.color)"  value="#505666"/>
-<Variable name="body.link.color" description="Comments Link Color" hideEditor="true" type="color" default="$(main.color)"  value="#ff4422"/>
+<Variable name="body.link.color" description="Comments Link Color" hideEditor="true" type="color" default="$(main.color)"  value="#00acff"/>
 <Variable name="body.text.font" description="Comments Font 1" hideEditor="true" type="font" default="normal 400 14px poppins, Arial, sans-serif !important"  value="normal 400 14px poppins, Arial, sans-serif !important"/>
 <Variable name="body.action.font.large" description="Comments Font 2" hideEditor="true" type="font" default="normal 700 14px poppins, Arial, sans-serif !important"  value="normal 700 14px poppins, Arial, sans-serif !important"/>
 -- Customize Options (End) --*/
