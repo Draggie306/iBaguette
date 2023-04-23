@@ -4007,7 +4007,7 @@ height: 100%;
             <b:widget-settings>
               <b:widget-setting name='link-3'>mailto:ibaguette-website-enquiries@ibaguette.com</b:widget-setting>
               <b:widget-setting name='sorting'>NONE</b:widget-setting>
-              <b:widget-setting name='link-4'>https://github.com/Draggie306/iBaguette/commit/07e34e683632daba3d5fa9e301c176092ed81680</b:widget-setting>
+              <b:widget-setting name='link-4'>https://github.com/Draggie306/iBaguette/commit/dbed6e98061ce104c649099941c6c95e92e7be94</b:widget-setting>
               <b:widget-setting name='text-1'>About Us</b:widget-setting>
               <b:widget-setting name='link-1'>#</b:widget-setting>
               <b:widget-setting name='text-0'>Home</b:widget-setting>
@@ -4015,7 +4015,7 @@ height: 100%;
               <b:widget-setting name='text-3'>Contact Us</b:widget-setting>
               <b:widget-setting name='link-0'>/</b:widget-setting>
               <b:widget-setting name='text-2'>Privacy Policy</b:widget-setting>
-              <b:widget-setting name='text-4'>Commit: </b:widget-setting>
+              <b:widget-setting name='text-4'>Commit: dbed6e98</b:widget-setting>
             </b:widget-settings>
             <b:includable id='main' var='this'>
       <b:include name='widget-title'/>
@@ -4030,7 +4030,7 @@ height: 100%;
     </div>
   </footer>
 </div>
-<!-- Fixed Elements -->
+<!-- Fixed Elements. -->
 <div id='fixed-elements'>
   <b:include cond='data:view.isPost' name='pbt-share-modal'/>
   <div id='slide-menu'>
