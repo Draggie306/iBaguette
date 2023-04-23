@@ -1,0 +1,14 @@
+#!/bin/bash
+
+# Get the current commit hash
+commit_hash=$(git rev-parse HEAD)
+
+# Extract the first 8 characters from the commit hash for smaller version
+small_commit_hash=${commit_hash:0:8}
+
+# Replace the commit hash in link-4 and text-4 widget settings in your XML file
+sed -i "s|<b:widget-setting name='link-4'>https://github.com/Draggie306/iBaguette/commit/[^<]*</b:widget-setting>|<b:widget-setting name='link-4'>https://github.com/Draggie306/iBaguette/commit/$commit_hash</b:widget-setting>|g" blogger_.template.xml
+sed -i "s|<b:widget-setting name='text-4'>Commit: [^<]*</b:widget-setting>|<b:widget-setting name='text-4'>Commit: $small_commit_hash</b:widget-setting>|g" blogger_.template.xml
+
+# Stage the modified XML file
+git add blogger_.template.xml
