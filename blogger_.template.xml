@@ -3959,8 +3959,7 @@ height: 100%;
                 <b:widget-setting name='shrinkToFit'>false</b:widget-setting>
                 <b:widget-setting name='displayWidth'>1198</b:widget-setting>
                 <b:widget-setting name='link'/>
-                <b:widget-setting name='caption'>Based in the UK, this privacy-focused, open-source platform offers a wealth of resources, including acclaimed revision cheat sheets, links to top-rated revision resources, games development projects, Minecraft servers, a technical blog, and much more. Plus, with open-source development guidance and public APIs, iBaguette is committed to making your experience better. Check out the site for custom Discord bots, a desktop application called DraggieTools, and information about our YouTube channel.
-                Commit: COMMIT HASH HERE</b:widget-setting>
+                <b:widget-setting name='caption'>Based in the UK, this privacy-focused, open-source platform offers a wealth of resources, including acclaimed revision cheat sheets, links to top-rated revision resources, games development projects, Minecraft servers, a technical blog, and much more. Plus, with open-source development guidance and public APIs, iBaguette is committed to making your experience better. Check out the site for custom Discord bots, a desktop application called DraggieTools, and information about our YouTube channel.</b:widget-setting>
               </b:widget-settings>
               <b:includable id='main' var='this'>
       <b:include name='widget-title'/>
@@ -4008,6 +4007,7 @@ height: 100%;
             <b:widget-settings>
               <b:widget-setting name='link-3'>mailto:ibaguette-website-enquiries@ibaguette.com</b:widget-setting>
               <b:widget-setting name='sorting'>NONE</b:widget-setting>
+              <b:widget-setting name='link-4'>https://github.com/Draggie306/iBaguette/commit/a715e24a25094dcc3c43c72a24dc411042710df8</b:widget-setting>
               <b:widget-setting name='text-1'>About Us</b:widget-setting>
               <b:widget-setting name='link-1'>#</b:widget-setting>
               <b:widget-setting name='text-0'>Home</b:widget-setting>
@@ -4015,6 +4015,7 @@ height: 100%;
               <b:widget-setting name='text-3'>Contact Us</b:widget-setting>
               <b:widget-setting name='link-0'>/</b:widget-setting>
               <b:widget-setting name='text-2'>Privacy Policy</b:widget-setting>
+              <b:widget-setting name='text-4'>[commit hash]</b:widget-setting>
             </b:widget-settings>
             <b:includable id='main' var='this'>
       <b:include name='widget-title'/>
