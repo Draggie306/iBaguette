@@ -3488,7 +3488,7 @@ ul.share-b{grid-gap:10px}
           </b:widget>
           <b:widget id='Image150' locked='false' title='About Us' type='Image' version='2' visible='false'>
             <b:widget-settings>
-              <b:widget-setting name='displayUrl'>https://api.ibaguette.com/static/Cats_LowMeta.jpeg</b:widget-setting>
+              <b:widget-setting name='displayUrl'>https://raw.githubusercontent.com/Draggie306/iBaguette/main/media/cats/Cats_LowMeta.jpeg</b:widget-setting>
               <b:widget-setting name='displayHeight'>50</b:widget-setting>
               <b:widget-setting name='sectionWidth'>150</b:widget-setting>
               <b:widget-setting name='shrinkToFit'>false</b:widget-setting>
@@ -3953,7 +3953,7 @@ height: 100%;
           <b:section class='about-section flex-sb' cond='data:widgets.Image any w =&gt; w.sectionId == &quot;xdfcb-about-section&quot;' id='xdfcb-about-section' maxwidgets='2' name='About Section' showaddelement='yes'>
             <b:widget id='Image51' locked='true' title='About Us' type='Image' visible='true'>
               <b:widget-settings>
-                <b:widget-setting name='displayUrl'>https://api.ibaguette.com/static/Cats_LowMeta.jpeg</b:widget-setting>
+                <b:widget-setting name='displayUrl'>https://raw.githubusercontent.com/Draggie306/iBaguette/main/media/cats/Cats_LowMeta.jpeg</b:widget-setting>
                 <b:widget-setting name='displayHeight'>332</b:widget-setting>
                 <b:widget-setting name='sectionWidth'>150</b:widget-setting>
                 <b:widget-setting name='shrinkToFit'>false</b:widget-setting>
