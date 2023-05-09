@@ -2182,7 +2182,7 @@ ul.share-b{grid-gap:10px}
                       <b:widget-setting name='link-17'>https://discord.gg/GfetCXH</b:widget-setting>
                       <b:widget-setting name='link-16'>/search/label/YouTube</b:widget-setting>
                       <b:widget-setting name='sorting'>NONE</b:widget-setting>
-                      <b:widget-setting name='link-18'>https://www.youtube.com/watch?v=dQw4w9WgXcQ</b:widget-setting>
+                      <b:widget-setting name='link-18'>https://storage.ibaguette.com/How%20to%20Disable%20Ads.mp4</b:widget-setting>
                       <b:widget-setting name='link-1'>https://ibaguette.com/cheatsheets</b:widget-setting>
                       <b:widget-setting name='link-13'>https://ibaguette.com/cheatsheets</b:widget-setting>
                       <b:widget-setting name='link-2'>https://ibaguette.com/cheatsheets/gcse</b:widget-setting>
@@ -4014,7 +4014,7 @@ height: 100%;
             <b:widget-settings>
               <b:widget-setting name='link-3'>mailto:ibaguette-website-enquiries@ibaguette.com</b:widget-setting>
               <b:widget-setting name='sorting'>NONE</b:widget-setting>
-              <b:widget-setting name='link-4'>https://github.com/Draggie306/iBaguette/commit/8046aa7d47b698fe82497769bee2a81209aa3565</b:widget-setting>
+              <b:widget-setting name='link-4'>https://github.com/Draggie306/iBaguette/commit/b7953447322a1f5c0fc9e030bdc0bdd9dded16ad</b:widget-setting>
               <b:widget-setting name='text-1'>About Us</b:widget-setting>
               <b:widget-setting name='link-1'>#</b:widget-setting>
               <b:widget-setting name='text-0'>Home</b:widget-setting>
@@ -4022,7 +4022,7 @@ height: 100%;
               <b:widget-setting name='text-3'>Contact Us</b:widget-setting>
               <b:widget-setting name='link-0'>/</b:widget-setting>
               <b:widget-setting name='text-2'>Privacy Policy</b:widget-setting>
-              <b:widget-setting name='text-4'>Commit: 8046aa7</b:widget-setting>
+              <b:widget-setting name='text-4'>Commit: b795344</b:widget-setting>
             </b:widget-settings>
             <b:includable id='main' var='this'>
       <b:include name='widget-title'/>
