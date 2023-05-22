@@ -1062,8 +1062,8 @@ ul.share-b{grid-gap:10px}
       <link href='//cdnjs.cloudflare.com' rel='dns-prefetch'/>
       <link href='//1.bp.blogspot.com' rel='dns-prefetch'/>
       <link href='//2.bp.blogspot.com' rel='dns-prefetch'/>
-      <link href='//3.bp.blogspot.com' rel='dns-prefetch'/>
-      <link href='//4.bp.blogspot.com' rel='dns-prefetch'/>
+      <link href='//cdn.ibaguette.com' rel='dns-prefetch'/>
+      <link href='//ibaguette.com' rel='dns-prefetch'/>
       <link href='//blogger.googleusercontent.com' rel='dns-prefetch'/>
       <link href='//lh5.googleusercontent.com' rel='dns-prefetch'/>
       <link href='//www.blogger.com' rel='dns-prefetch'/>
@@ -2063,7 +2063,7 @@ ul.share-b{grid-gap:10px}
     <b:section class='pbt-panel' id='pbt-panel' maxwidgets='2' name='Theme Options' showaddelement='no'>
       <b:widget id='Image52' locked='true' title='Default Thumbnail' type='Image' visible='true'>
         <b:widget-settings>
-          <b:widget-setting name='displayUrl'>https://1.bp.blogspot.com/-rI4UCIrwEI4/YN3nGkf0nCI/AAAAAAAAAD0/DQ6fW7eCps8NL7S0oh374KFg1MsWUf2GQCLcBGAsYHQ/s72-c/ptb-nth.png</b:widget-setting>
+          <b:widget-setting name='displayUrl'>https://cdn.ibaguette.com/mainsite/no-img-square.png</b:widget-setting>
           <b:widget-setting name='displayHeight'>154</b:widget-setting>
           <b:widget-setting name='sectionWidth'>150</b:widget-setting>
           <b:widget-setting name='shrinkToFit'>false</b:widget-setting>
@@ -3150,9 +3150,9 @@ ul.share-b{grid-gap:10px}
         <div class='post-content'>
           <a class='post-image-link' expr:href='data:post.url'>
             <b:if cond='data:post.featuredImage'>
-              <img class='post-thumb' expr:alt='data:post.title' expr:src='resizeImage(data:post.featuredImage, 72, &quot;1:1&quot;)'/>
+              <img class='post-thumb' expr:alt='data:post.title' expr:src='resizeImage(data:post.featuredImage, 72, "1:1")' rel="preload" as="image" />
               <b:else/>
-              <img class='post-thumb' expr:alt='data:post.title' src='https://4.bp.blogspot.com/-O3EpVMWcoKw/WxY6-6I4--I/AAAAAAAAB2s/KzC0FqUQtkMdw7VzT6oOR_8vbZO6EJc-ACK4BGAYYCw/w680/nth.png'/>
+              <img class='post-thumb' expr:alt='data:post.title' src='https://cdn.ibaguette.com/mainsite/no-img.png'/>
             </b:if>
             <span class='post-tag'><data:post.labels.last.name/></span>
           </a>
@@ -3667,7 +3667,7 @@ height: 100%;
             <b:if cond='data:post.featuredImage'>
               <img class='post-thumb' expr:alt='data:post.title' expr:src='resizeImage(data:post.featuredImage, 72, &quot;1:1&quot;)'/>
               <b:else/>
-              <img class='post-thumb' expr:alt='data:post.title' src='https://4.bp.blogspot.com/-O3EpVMWcoKw/WxY6-6I4--I/AAAAAAAAB2s/KzC0FqUQtkMdw7VzT6oOR_8vbZO6EJc-ACK4BGAYYCw/w680/nth.png'/>
+              <img class='post-thumb' expr:alt='data:post.title' src='https://cdn.ibaguette.com/mainsite/no-img.png'/>
             </b:if>
           </a>
           <div class='post-info'>
@@ -3704,9 +3704,9 @@ height: 100%;
                  <div class='post-image-wrap'>
                   <a class='post-image-link' expr:href='data:post.url'>
             <b:if cond='data:post.featuredImage'>
-              <img class='post-thumb' expr:alt='data:post.title' expr:src='resizeImage(data:post.featuredImage, 72, &quot;1:1&quot;)'/>
+              <img class='post-thumb' expr:alt='data:post.title' expr:src='resizeImage(data:post.featuredImage, 72, "1:1")' rel="preload" as="image" />
               <b:else/>
-              <img class='post-thumb' expr:alt='data:post.title' src='https://4.bp.blogspot.com/-O3EpVMWcoKw/WxY6-6I4--I/AAAAAAAAB2s/KzC0FqUQtkMdw7VzT6oOR_8vbZO6EJc-ACK4BGAYYCw/w680/nth.png'/>
+              <img class='post-thumb' expr:alt='data:post.title' src='https://cdn.ibaguette.com/mainsite/no-img.png'/>
             </b:if>
           </a>
              </div>
@@ -4014,7 +4014,7 @@ height: 100%;
             <b:widget-settings>
               <b:widget-setting name='link-3'>mailto:ibaguette-website-enquiries@ibaguette.com</b:widget-setting>
               <b:widget-setting name='sorting'>NONE</b:widget-setting>
-              <b:widget-setting name='link-4'>https://github.com/Draggie306/iBaguette/commit/9842430b7049a4e74c5dba105553d9a91e86b67a</b:widget-setting>
+              <b:widget-setting name='link-4'>https://github.com/Draggie306/iBaguette/commit/ae71a6edd65e52eb188c3daec250d320510c8f74</b:widget-setting>
               <b:widget-setting name='text-1'>About Us</b:widget-setting>
               <b:widget-setting name='link-1'>#</b:widget-setting>
               <b:widget-setting name='text-0'>Home</b:widget-setting>
@@ -4022,7 +4022,7 @@ height: 100%;
               <b:widget-setting name='text-3'>Contact Us</b:widget-setting>
               <b:widget-setting name='link-0'>/</b:widget-setting>
               <b:widget-setting name='text-2'>Privacy Policy</b:widget-setting>
-              <b:widget-setting name='text-4'>Commit: 9842430</b:widget-setting>
+              <b:widget-setting name='text-4'>Commit: ae71a6e</b:widget-setting>
             </b:widget-settings>
             <b:includable id='main' var='this'>
       <b:include name='widget-title'/>
@@ -4077,8 +4077,8 @@ height: 100%;
 /*! pbtMenu by Pro Blogger Templates | v1.3.0 - https://probloggertemplates.com */
 !function(e){e.fn.pbtMenu=function(){return this.each(function(){for(var t=e(this),a=t.find(".widget ul > li").children("a"),n=a.length,r=0;r<n;r++){var i=a.eq(r),s=i.text();if("_"!==s.charAt(0))if("_"===a.eq(r+1).text().charAt(0)){var u=i.parent();u.append('<ul class="sub-menu sm-1"/>')}"_"===s.charAt(0)&&(i.text(s.replace("_","")),i.parent().appendTo(u.children(".sub-menu")))}for(r=0;r<n;r++){var c=a.eq(r),d=c.text();if("_"!==d.charAt(0))if("_"===a.eq(r+1).text().charAt(0)){var p=c.parent();p.append('<ul class="sub-menu sm-2"/>')}"_"===d.charAt(0)&&(c.text(d.replace("_","")),c.parent().appendTo(p.children(".sm-2")))}t.find(".sub-menu").parent("li").addClass("has-sub"),t.children(".widget").addClass("is-ready")})}}(jQuery);
 
-/*! pbtLazy by Pro Blogger Templates | v1.4.0 - https://probloggertemplates.com */
-!function(o){o.fn.pbtLazy=function(n){return n=o.extend({onScroll:!0},n),this.each(function(t,c,e){var r=o(this),a=o(window),h=r.data("src"),l=r.width()>=1?r.width():1,s=(l=Math.round(l+l/10),r.height()>=1?r.height():1),i="w"+l+"-h"+(s=Math.round(s+s/10))+"-p-k-no-nu";function u(){var o=new Image;o.onload=function(){r.attr("style","background-image:url("+this.src+")").addClass("pbt-lazy")},o.src=t}h.match("resources.blogblog.com")&&(h="undefined"!=typeof noThumbnail?noThumbnail:"//1.bp.blogspot.com/-rI4UCIrwEI4/YN3nGkf0nCI/AAAAAAAAAD0/DQ6fW7eCps8NL7S0oh374KFg1MsWUf2GQCLcBGAsYHQ/s72-c/ptb-nth.png"),h.match(".googleusercontent.com")&&h.match("=")&&(e=h.split("="),h=e[1]&&""!=e[1].trim()?e[0]+"=w72-h72-p-k-no-nu":h),h.match(".googleusercontent.com")&&!h.match("=")&&(h+="=w72-h72-p-k-no-nu"),t=h.match("/s72-c")?h.replace("/s72-c","/"+i):h.match("/w72-h")?h.replace("/w72-h72-p-k-no-nu","/"+i):h.match("=w72-h")?h.replace("=w72-h72-p-k-no-nu","="+i):h,1==n.onScroll?a.on("load resize scroll",function o(){a.scrollTop()+a.height()>=r.offset().top&&(a.off("load resize scroll",o),u())}).trigger("scroll"):a.on("load",function o(){a.off("load",o),u()}).trigger("load")})}}(jQuery);
+/*! pbtLazy by Pro Blogger Templates | v1.4.0 - https://probloggertemplates.com modified by iBaguette */
+!function(o){o.fn.pbtLazy=function(n){return n=o.extend({onScroll:!0},n),this.each(function(t,c,e){var r=o(this),a=o(window),h=r.data("src"),l=r.width()>=1?r.width():1,s=(l=Math.round(l+l/10),r.height()>=1?r.height():1),i="w"+l+"-h"+(s=Math.round(s+s/10))+"-p-k-no-nu";function u(){var o=new Image;o.onload=function(){r.attr("style","background-image:url("+this.src+")").addClass("pbt-lazy")},o.src=t}h.match("resources.blogblog.com")&&(h="undefined"!=typeof noThumbnail?noThumbnail:"https://cdn.ibaguette.com/mainsite/no-img.png"),h.match(".googleusercontent.com")&&h.match("=")&&(e=h.split("="),h=e[1]&&""!=e[1].trim()?e[0]+"=w72-h72-p-k-no-nu":h),h.match(".googleusercontent.com")&&!h.match("=")&&(h+="=w72-h72-p-k-no-nu"),t=h.match("/s72-c")?h.replace("/s72-c","/"+i):h.match("/w72-h")?h.replace("/w72-h72-p-k-no-nu","/"+i):h.match("=w72-h")?h.replace("=w72-h72-p-k-no-nu","="+i):h,1==n.onScroll?a.on("load resize scroll",function o(){a.scrollTop()+a.height()>=r.offset().top&&(a.off("load resize scroll",o),u())}).trigger("scroll"):a.on("load",function o(){a.off("load",o),u()}).trigger("load")})}}(jQuery);
 
 /*! jQuery replaceText | v1.1.0 - https://benalman.com/projects/jquery-replacetext-plugin */
 !function(e){e.fn.replaceText=function(n,t,i){return this.each(function(){var o,r,l=this.firstChild,u=[];if(l)do{3===l.nodeType&&(r=(o=l.nodeValue).replace(n,t))!==o&&(!i&&/</.test(r)?(e(l).before(r),u.push(l)):l.nodeValue=r)}while(l=l.nextSibling);u.length&&e(u).remove()})}}(jQuery);
