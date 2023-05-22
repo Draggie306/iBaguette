@@ -2252,7 +2252,7 @@ ul.share-b{grid-gap:10px}
             <b:section class='headerbar' id='headerbar' maxwidgets='2' name='Header Bar' showaddelement='no'>
               <b:widget id='LinkList202' locked='true' title='Follow Us' type='LinkList' visible='true'>
                 <b:widget-settings>
-                  <b:widget-setting name='link-5'>https://instagram.com/draggie306 # Instagram</b:widget-setting>
+                  <b:widget-setting name='link-5'>https://instagram.com/ibaguettecom # Instagram</b:widget-setting>
                   <b:widget-setting name='link-3'>https://www.youtube.com/draggie306?sub_confirmation=1 # YouTube</b:widget-setting>
                   <b:widget-setting name='link-4'>https://www.twitch.tv/draggie306 # Twitch</b:widget-setting>
                   <b:widget-setting name='text-1'>facebook</b:widget-setting>
@@ -4014,7 +4014,7 @@ height: 100%;
             <b:widget-settings>
               <b:widget-setting name='link-3'>mailto:ibaguette-website-enquiries@ibaguette.com</b:widget-setting>
               <b:widget-setting name='sorting'>NONE</b:widget-setting>
-              <b:widget-setting name='link-4'>https://github.com/Draggie306/iBaguette/commit/b7953447322a1f5c0fc9e030bdc0bdd9dded16ad</b:widget-setting>
+              <b:widget-setting name='link-4'>https://github.com/Draggie306/iBaguette/commit/9842430b7049a4e74c5dba105553d9a91e86b67a</b:widget-setting>
               <b:widget-setting name='text-1'>About Us</b:widget-setting>
               <b:widget-setting name='link-1'>#</b:widget-setting>
               <b:widget-setting name='text-0'>Home</b:widget-setting>
@@ -4022,7 +4022,7 @@ height: 100%;
               <b:widget-setting name='text-3'>Contact Us</b:widget-setting>
               <b:widget-setting name='link-0'>/</b:widget-setting>
               <b:widget-setting name='text-2'>Privacy Policy</b:widget-setting>
-              <b:widget-setting name='text-4'>Commit: b795344</b:widget-setting>
+              <b:widget-setting name='text-4'>Commit: 9842430</b:widget-setting>
             </b:widget-settings>
             <b:includable id='main' var='this'>
       <b:include name='widget-title'/>
