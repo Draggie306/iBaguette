@@ -7,7 +7,9 @@ Additionally, it has quick links and a platform to discover other well-reputed r
 
 ## For Institutions
 iBaguette is beginning to provide services to educational institutions, with 8 UK institutions currently trialling this scheme. For more details, please go to https://www.ibaguette.com/p/institution-information.
+
 If you have access to the iBaguette Institutions site please go to https://institutions.ibaguette.com/ and sign in to see the education portal.
+
 Looking to integrate our services, or been recommended by another organisation? Send us an email to learn more and request a trial: institutions@ibaguette.com
 
 ## Extra details
