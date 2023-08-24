@@ -1067,22 +1067,23 @@ ul.share-b{grid-gap:10px}
       <link href='//blogger.googleusercontent.com' rel='dns-prefetch'/>
       <link href='//lh5.googleusercontent.com' rel='dns-prefetch'/>
       <link href='//www.blogger.com' rel='dns-prefetch'/>
+      <script src='https://cdn.ibaguette.com/testonly-fixer.js' type='text/javascript'/>
       <!-- Site Info -->
       <meta content='blogger' name='generator'/>
       <title><data:view.title.escaped/></title>
       <meta expr:content='data:view.description.escaped' name='description'/>
       <link expr:href='data:view.url.canonical' rel='canonical'/>
-      <link rel="manifest" href="/site.webmanifest"/>
+      <link href='/site.webmanifest' rel='manifest'/>
       <b:if cond='data:blog.adultContent'>
         <meta content='adult' name='rating'/>
       </b:if>
       <meta content='upgrade-insecure-requests' http-equiv='Content-Security-Policy'/>
       <link href='data:image/x-icon;base64,AAABAAEAEBAAAAEAIABoBAAAFgAAACgAAAAQAAAAIAAAAAEAIAAAAAAAQAQAAAAAAAAAAAAAAAAAAAAAAADB0+D/oLbH/6G5y//E2ev/rL7M/7LD1f/M3vD/0+Xx/9Hj8v/L3O3/0+Pv/9rn7//o7vT/6PD2/+Hy+P/k8/n/u9Hb/0RTXP8AAAD/gJSi/5+3yv+ctcn/mbHF/5y1yv+rvtP/rcDV/6/A0/+uvMn/y9Xe/8ja5f+itcn/0Oju/6a6x/+gtcD/ICkx/x4jLv+Wqbv/pLnN/6W5zv+mvtL/rsDR/46gtf9/jp7/trzI/8jT3//l7vX/tMfU/6m9z/+TpLD/VWRu/zdCUP8SChf/DQob/15seP+lucj/j6Cy/1Vnev9gcof/dYea/7vM2P+Jn7f/XGyB/3qTrf+UrMb/R1Ne/x8iL/8nLTn/KSw4/x0hK/8aHin/MzlC/0BRY/87SWD/Tl9z/2Byhv9riZ7/UWJ3/1VidP9dZnr/gpKn/yUpNP8TDhj/ExAY/xsXI/8nJTH/Jicy/yMdKP8mLD3/QVNo/z9JYP9IXHP/boac/1prgf9aZXb/bXZ//214hf8fHSf/FhId/xIPF/8UDxv/KSs2/x8bJv8lISr/KS5A/z5PZf8vM0n/PU5j/4+pyP9bY3n/fICK/4qJkv+TlZ7/HBgg/x0ZJf8UERv/EA4U/x0YJP8TEBj/HBgh/zM7TP88S2H/LzNI/ygvP/9keY3/f4eV/4yNl/+cmaH/ipOb/zA2Qv8tLDf/Ih8r/x8bJf8wLjn/EAwT/xkVH/82OUn/PUNa/z1MYf84Rlr/OEVa/1Jjef9daXz/ZG57/2BzgP+qvsb/SlFa/zU6RP84NkL/KCcw/xQQGf8VERn/LzRC/zk+VP9DU2j/U2V6/1Rme/9UY3j/anJ9/1Zja/90h5b/m7C4/4ygs/83O0j/MTI8/ygkLv8kICr/JyQt/ykoMv9SXnT/UVtv/1NfdP9RXXD/am56/2dxe/9vfIX/d42g/4yfq/+YsMX/orO9/x0jL/84O0b/MDA4/zQwOf8qJC3/MThC/ycsOP9YWmT/hH+E/3V6hv9reYT/eIyU/4OXpP+WrLf/q8vZ/77a6P91gpH/IBkn/ywmMf82O0b/ZHJ5/46ktP94i5b/iZWe/4mWpv9vgpH/coaS/4CVnP+Inqv/nbW//8rf5v++2OP/sM/i/3uPm/9qeoT/ucbM/8LR1/+mvcf/tsnO/+rp5P+Ppbb/gpem/3iMl/+HnKT/jqOr/5q1vf/F3ev/u9Td/6zH2P+qxNH/uMzV/9ne4P////3///////Lz6//9/fn/na+2/3+apv93i5j/h52l/46jrP+Tq7n/n77Q/5q6yv+gtcP/nbK8/560vv++yM3/8vHs//z9+//w8er//////8XJyP+OqLH/jqGt/6Ozuv+uvsP/AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==' rel='icon' type='image/x-icon'/>
-      <meta name="mobile-web-app-capable" content="yes"/>
-      <meta name="apple-mobile-web-app-capable" content="yes"/>
-      <meta name="apple-mobile-web-app-title" content="iBaguette"/>
-      <meta name="apple-mobile-web-app-status-bar-style" content="black"/>  
-      <meta name="theme-color" content="#00acff"/>
+      <meta content='yes' name='mobile-web-app-capable'/>
+      <meta content='yes' name='apple-mobile-web-app-capable'/>
+      <meta content='iBaguette' name='apple-mobile-web-app-title'/>
+      <meta content='black' name='apple-mobile-web-app-status-bar-style'/>  
+      <meta content='#00acff' name='theme-color'/>
 
       <meta expr:content='data:skin.vars.main_color' name='theme-color'/>
       <b:include name='customOpenGraphMetaData'/>
@@ -2190,7 +2191,7 @@ ul.share-b{grid-gap:10px}
                       <b:widget-setting name='link-15'>/b</b:widget-setting>
                       <b:widget-setting name='link-0'>/</b:widget-setting>
                       <b:widget-setting name='link-14'>https://ibaguette.com/cheatsheets/alevel</b:widget-setting>
-                      <b:widget-setting name='link-11'>https://ibaguette.com/cheatsheets</b:widget-setting>
+                      <b:widget-setting name='link-11'>https://ibaguette.com/cheatsheets/alevel/computerscience</b:widget-setting>
                       <b:widget-setting name='link-10'>https://ibaguette.com/cheatsheets/alevel/geography/all</b:widget-setting>
                       <b:widget-setting name='text-9'>_A Level</b:widget-setting>
                       <b:widget-setting name='link-9'>https://ibaguette.com/cheatsheets/alevel</b:widget-setting>
@@ -2213,7 +2214,7 @@ ul.share-b{grid-gap:10px}
                       <b:widget-setting name='text-16'>YouTube Content</b:widget-setting>
                       <b:widget-setting name='text-17'>Discord Server</b:widget-setting>
                       <b:widget-setting name='text-18'>Disable Ads</b:widget-setting>
-                      <b:widget-setting name='text-11'>__Computer Science</b:widget-setting>
+                      <b:widget-setting name='text-11'>__OCR Computer Science</b:widget-setting>
                       <b:widget-setting name='text-12'>__Maths, Physics, Chemistry</b:widget-setting>
                       <b:widget-setting name='text-13'>__</b:widget-setting>
                       <b:widget-setting name='text-14'>__View more A Level resources...</b:widget-setting>
@@ -3150,7 +3151,7 @@ ul.share-b{grid-gap:10px}
         <div class='post-content'>
           <a class='post-image-link' expr:href='data:post.url'>
             <b:if cond='data:post.featuredImage'>
-              <img class='post-thumb' expr:alt='data:post.title' expr:src='resizeImage(data:post.featuredImage, 72, "1:1")' rel="preload" as="image" />
+              <img as='image' class='post-thumb' expr:alt='data:post.title' expr:src='resizeImage(data:post.featuredImage, 72, &quot;1:1&quot;)' rel='preload'/>
               <b:else/>
               <img class='post-thumb' expr:alt='data:post.title' src='https://cdn.ibaguette.com/mainsite/no-img.png'/>
             </b:if>
@@ -3704,7 +3705,7 @@ height: 100%;
                  <div class='post-image-wrap'>
                   <a class='post-image-link' expr:href='data:post.url'>
             <b:if cond='data:post.featuredImage'>
-              <img class='post-thumb' expr:alt='data:post.title' expr:src='resizeImage(data:post.featuredImage, 72, "1:1")' rel="preload" as="image" />
+              <img as='image' class='post-thumb' expr:alt='data:post.title' expr:src='resizeImage(data:post.featuredImage, 72, &quot;1:1&quot;)' rel='preload'/>
               <b:else/>
               <img class='post-thumb' expr:alt='data:post.title' src='https://cdn.ibaguette.com/mainsite/no-img.png'/>
             </b:if>
@@ -4014,7 +4015,7 @@ height: 100%;
             <b:widget-settings>
               <b:widget-setting name='link-3'>mailto:ibaguette-website-enquiries@ibaguette.com</b:widget-setting>
               <b:widget-setting name='sorting'>NONE</b:widget-setting>
-              <b:widget-setting name='link-4'>https://github.com/Draggie306/iBaguette/commit/f5dcfc3c56494e10690ced975d3ab0856942ee19</b:widget-setting>
+              <b:widget-setting name='link-4'>https://github.com/Draggie306/iBaguette/commit/2594b241a41a335620ca1044d7d5569e4849ad53</b:widget-setting>
               <b:widget-setting name='text-1'>About Us</b:widget-setting>
               <b:widget-setting name='link-1'>#</b:widget-setting>
               <b:widget-setting name='text-0'>Home</b:widget-setting>
@@ -4022,7 +4023,7 @@ height: 100%;
               <b:widget-setting name='text-3'>Contact Us</b:widget-setting>
               <b:widget-setting name='link-0'>/</b:widget-setting>
               <b:widget-setting name='text-2'>Privacy Policy</b:widget-setting>
-              <b:widget-setting name='text-4'>Commit: f5dcfc3</b:widget-setting>
+              <b:widget-setting name='text-4'>Commit: 2594b24</b:widget-setting>
             </b:widget-settings>
             <b:includable id='main' var='this'>
       <b:include name='widget-title'/>
