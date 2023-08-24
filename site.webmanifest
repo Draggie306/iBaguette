@@ -38,16 +38,16 @@
         "type": "image/png"
     }
     ],
-    "start_url": "https://ibaguette.com",
+    "start_url": "https://www.ibaguette.com",
     "background_color": "#00acff",
     "display": "standalone",
     "scope": "/",
     "shortcuts": [
         {
-          "name": "How's weather today?",
-          "short_name": "Today",
-          "description": "View weather information for today",
-          "url": "https://ibaguette.com/cheatsheets",
+          "name": "iBaguette Revision Material",
+          "short_name": "Cheat Sheets",
+          "description": "View all of the iBaguette revision material in one place.",
+          "url": "https://www.ibaguette.com/cheatsheets",
           "icons": [{ "src": "https://api.ibaguette.com/webapp/apple-icon.png", "sizes": "192x192" }]
         }
     ]
