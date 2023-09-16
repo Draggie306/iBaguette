@@ -2296,7 +2296,7 @@ ul.share-b{grid-gap:10px}
               <b:widget-setting name='commentLabel'>$type={blogger}</b:widget-setting>
               <b:widget-setting name='style.textcolor'>#ffffff</b:widget-setting>
               <b:widget-setting name='showShareButtons'>true</b:widget-setting>
-              <b:widget-setting name='authorLabel'>written by</b:widget-setting>
+              <b:widget-setting name='authorLabel'>Written by: </b:widget-setting>
               <b:widget-setting name='showCommentLink'>true</b:widget-setting>
               <b:widget-setting name='style.urlcolor'>#ffffff</b:widget-setting>
               <b:widget-setting name='showAuthor'>true</b:widget-setting>
@@ -2304,7 +2304,7 @@ ul.share-b{grid-gap:10px}
               <b:widget-setting name='style.unittype'>TextAndImage</b:widget-setting>
               <b:widget-setting name='style.bgcolor'>#ffffff</b:widget-setting>
               <b:widget-setting name='timestampLabel'>&#8226;</b:widget-setting>
-              <b:widget-setting name='reactionsLabel'/>
+              <b:widget-setting name='reactionsLabel'>Reactions:</b:widget-setting>
               <b:widget-setting name='showAuthorProfile'>true</b:widget-setting>
               <b:widget-setting name='style.layout'>1x1</b:widget-setting>
               <b:widget-setting name='showLabels'>true</b:widget-setting>
@@ -2314,8 +2314,8 @@ ul.share-b{grid-gap:10px}
               <b:widget-setting name='postsPerAd'>1</b:widget-setting>
               <b:widget-setting name='showBacklinks'>false</b:widget-setting>
               <b:widget-setting name='style.bordercolor'>#ffffff</b:widget-setting>
-              <b:widget-setting name='showInlineAds'>false</b:widget-setting>
-              <b:widget-setting name='showReactions'>false</b:widget-setting>
+              <b:widget-setting name='showInlineAds'>true</b:widget-setting>
+              <b:widget-setting name='showReactions'>true</b:widget-setting>
             </b:widget-settings>
             <b:includable id='main' var='this'>
       <b:class cond='data:view.isMultipleItems' name='index-blog flex-col'/>
@@ -4015,7 +4015,7 @@ height: 100%;
             <b:widget-settings>
               <b:widget-setting name='link-3'>mailto:ibaguette-website-enquiries@ibaguette.com</b:widget-setting>
               <b:widget-setting name='sorting'>NONE</b:widget-setting>
-              <b:widget-setting name='link-4'>https://github.com/Draggie306/iBaguette/commit/38eb0f2611d84d8dc99a933809f7d9bebf634207</b:widget-setting>
+              <b:widget-setting name='link-4'>https://github.com/Draggie306/iBaguette/commit/0b4a3a94bdc5232a1e5ba61e8c1f819eba5f80d9</b:widget-setting>
               <b:widget-setting name='text-1'>About Us</b:widget-setting>
               <b:widget-setting name='link-1'>#</b:widget-setting>
               <b:widget-setting name='text-0'>Home</b:widget-setting>
@@ -4023,7 +4023,7 @@ height: 100%;
               <b:widget-setting name='text-3'>Contact Us</b:widget-setting>
               <b:widget-setting name='link-0'>/</b:widget-setting>
               <b:widget-setting name='text-2'>Privacy Policy</b:widget-setting>
-              <b:widget-setting name='text-4'>Commit: 38eb0f2</b:widget-setting>
+              <b:widget-setting name='text-4'>Commit: 0b4a3a9</b:widget-setting>
             </b:widget-settings>
             <b:includable id='main' var='this'>
       <b:include name='widget-title'/>
