@@ -3967,7 +3967,7 @@ height: 100%;
                 <b:widget-setting name='shrinkToFit'>false</b:widget-setting>
                 <b:widget-setting name='displayWidth'>1198</b:widget-setting>
                 <b:widget-setting name='link'/>
-                <b:widget-setting name='caption'>iBaguette.com offers, amongst other things, a huge range of acclaimed revision material and advice for students, teachers, developers, professionals and more. The iBaguette team is made up of a small group, passionate about education, technology, gaming, the Internet and more. We're completely dedicated to bringing free and unified access to intuitive, high-quality educational material all in a single place whilst collecting no personal data. We proudly collaborate with a range of educational institutions with teachers in schools, colleges and universities (and professionals in other organisations) relying on and contributing to our content. <strong>Join us in the pursuit of knowledge; explore iBaguette today!</strong></b:widget-setting>
+                <b:widget-setting name='caption'>iBaguette.com offers, amongst other things, a huge range of acclaimed revision material and advice for students, teachers, developers, professionals and more. The iBaguette team is made up of a small group, passionate about education, technology, gaming, the Internet and more. We're completely dedicated to bringing free and unified access to intuitive, high-quality educational material all in a single place whilst collecting no personal data. We proudly collaborate with a range of educational institutions with teachers in schools, colleges and universities (and professionals in other organisations) relying on and contributing to our content. Join us in the pursuit of knowledge; explore iBaguette today!</b:widget-setting>
               </b:widget-settings>
               <b:includable id='main' var='this'>
       <b:include name='widget-title'/>
@@ -4015,7 +4015,7 @@ height: 100%;
             <b:widget-settings>
               <b:widget-setting name='link-3'>mailto:ibaguette-website-enquiries@ibaguette.com</b:widget-setting>
               <b:widget-setting name='sorting'>NONE</b:widget-setting>
-              <b:widget-setting name='link-4'>https://github.com/Draggie306/iBaguette/commit/55d0fba53beb6849cc458b7adf4ead070bba9d1f</b:widget-setting>
+              <b:widget-setting name='link-4'>https://github.com/Draggie306/iBaguette/commit/5d6d01569a1684df532ced5f56ed25373a96db7d</b:widget-setting>
               <b:widget-setting name='text-1'>About Us</b:widget-setting>
               <b:widget-setting name='link-1'>#</b:widget-setting>
               <b:widget-setting name='text-0'>Home</b:widget-setting>
@@ -4023,7 +4023,7 @@ height: 100%;
               <b:widget-setting name='text-3'>Contact Us</b:widget-setting>
               <b:widget-setting name='link-0'>/</b:widget-setting>
               <b:widget-setting name='text-2'>Privacy Policy</b:widget-setting>
-              <b:widget-setting name='text-4'>Commit: 55d0fba</b:widget-setting>
+              <b:widget-setting name='text-4'>Commit: 5d6d015</b:widget-setting>
             </b:widget-settings>
             <b:includable id='main' var='this'>
       <b:include name='widget-title'/>
