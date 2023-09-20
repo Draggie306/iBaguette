@@ -274,7 +274,7 @@ a,input,textarea,button{transition:all .0s ease}
 .entry-title a:hover{color:var(--title-hover-color)}
 .entry-meta{display:flex;font-size:12px;color:var(--meta-color);font-weight:var(--light-weight);margin:4px 0 0}
 .entry-meta .mi{display:flex}
-.entry-meta .mi,.entry-meta .sp{margin:0 4px 0 0}
+.entry-meta .mi,.entry-meta .sp{margin:0 2.4px 0 0}
 .rtl .entry-meta .mi,.rtl .entry-meta .sp{margin:0 0 0 4px}
 .entry-meta .author-name{color:var(--meta-link-color);font-weight:500}
 .excerpt{font-family:var(--text-font);color:var(--text-color);font-weight:var(--light-weight);line-height:1.5em}
@@ -3967,7 +3967,7 @@ height: 100%;
                 <b:widget-setting name='shrinkToFit'>false</b:widget-setting>
                 <b:widget-setting name='displayWidth'>1198</b:widget-setting>
                 <b:widget-setting name='link'/>
-                <b:widget-setting name='caption'>iBaguette.com offers, amongst other things, a huge range of acclaimed revision material and advice for students, teachers, developers, professionals and more. The iBaguette team is made up of a small group, passionate about education, technology, gaming, the Internet and more. We're completely dedicated to bringing free and unified access to intuitive, high-quality educational material all in a single place whilst collecting no personal data. We proudly collaborate with a range of educational institutions with teachers in schools, colleges and universities (and professionals in other organisations) relying on and contributing to our content. Join us in the pursuit of knowledge; explore iBaguette today!</b:widget-setting>
+                <b:widget-setting name='caption'>iBaguette.com offers, amongst other things, a huge range of acclaimed revision material and advice for students, teachers, developers, professionals and more. The iBaguette team is made up of a small group who are passionate about education, technology, gaming, the Internet and lots more! We're completely dedicated to bringing free and unified access to intuitive, high-quality educational material all in a single place whilst collecting no personal data. We proudly collaborate with a range of educational institutions with teachers in schools, colleges and universities (and professionals in other organisations) relying on and contributing to our content. Join us in the pursuit of knowledge; explore iBaguette today!</b:widget-setting>
               </b:widget-settings>
               <b:includable id='main' var='this'>
       <b:include name='widget-title'/>
@@ -4015,15 +4015,15 @@ height: 100%;
             <b:widget-settings>
               <b:widget-setting name='link-3'>mailto:ibaguette-website-enquiries@ibaguette.com</b:widget-setting>
               <b:widget-setting name='sorting'>NONE</b:widget-setting>
-              <b:widget-setting name='link-4'>https://github.com/Draggie306/iBaguette/commit/5d6d01569a1684df532ced5f56ed25373a96db7d</b:widget-setting>
+              <b:widget-setting name='link-4'>https://github.com/Draggie306/iBaguette/commit/c47b9d93ef7ac81bb46de67540610ebef4de0140</b:widget-setting>
               <b:widget-setting name='text-1'>About Us</b:widget-setting>
-              <b:widget-setting name='link-1'>#</b:widget-setting>
+              <b:widget-setting name='link-1'>https://www.ibaguette.com/2023/04/what-is-iBaguette.html</b:widget-setting>
               <b:widget-setting name='text-0'>Home</b:widget-setting>
               <b:widget-setting name='link-2'>https://privacy.ibaguette.com/</b:widget-setting>
               <b:widget-setting name='text-3'>Contact Us</b:widget-setting>
               <b:widget-setting name='link-0'>/</b:widget-setting>
               <b:widget-setting name='text-2'>Privacy Policy</b:widget-setting>
-              <b:widget-setting name='text-4'>Commit: 5d6d015</b:widget-setting>
+              <b:widget-setting name='text-4'>Commit: c47b9d9</b:widget-setting>
             </b:widget-settings>
             <b:includable id='main' var='this'>
       <b:include name='widget-title'/>
