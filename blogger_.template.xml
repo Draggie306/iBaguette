@@ -2105,7 +2105,7 @@ ul.share-b{grid-gap:10px}
                   <b:section class='main-logo' id='main-logo' maxwidgets='1' name='Header Logo' showaddelement='no'>
                     <b:widget id='Image50' locked='true' title='' type='Image' visible='true'>
                       <b:widget-settings>
-                        <b:widget-setting name='displayUrl'>https://raw.githubusercontent.com/Draggie306/iBaguette/main/media/cats/CatswirlOptimised.webp</b:widget-setting>
+                        <b:widget-setting name='displayUrl'>https://storage.ibaguette.com/CatswirlOptimised.webp</b:widget-setting>
                         <b:widget-setting name='displayHeight'>332</b:widget-setting>
                         <b:widget-setting name='sectionWidth'>150</b:widget-setting>
                         <b:widget-setting name='shrinkToFit'>false</b:widget-setting>
@@ -2121,9 +2121,9 @@ ul.share-b{grid-gap:10px}
       <b:include name='image-content'/>
     </b:includable>
                     </b:widget>
-                    <b:widget id='Header1' locked='false' title='iBaguette | Main Site (Header)' type='Header' version='2' visible='false'>
+                    <b:widget id='Header1' locked='false' title='The Home of Free, Quality &amp;amp; Complete Resources: iBaguette (Header)' type='Header' version='2' visible='false'>
                       <b:widget-settings>
-                        <b:widget-setting name='displayUrl'>https://raw.githubusercontent.com/Draggie306/iBaguette/main/media/cats/CatswirlOptimised.webp</b:widget-setting>
+                        <b:widget-setting name='displayUrl'>https://storage.ibaguette.com/CatswirlOptimised.webp</b:widget-setting>
                         <b:widget-setting name='displayHeight'>50</b:widget-setting>
                         <b:widget-setting name='sectionWidth'>150</b:widget-setting>
                         <b:widget-setting name='useImage'>true</b:widget-setting>
@@ -2179,45 +2179,55 @@ ul.share-b{grid-gap:10px}
                 <b:section class='xdfcb-main-menu' id='xdfcb-main-menu' maxwidgets='1' name='Header Menu' showaddelement='no'>
                   <b:widget id='LinkList200' locked='false' title='Navbar' type='LinkList' visible='true'>
                     <b:widget-settings>
-                      <b:widget-setting name='text-10'>__OCR Geography</b:widget-setting>
-                      <b:widget-setting name='link-17'>https://discord.gg/GfetCXH</b:widget-setting>
-                      <b:widget-setting name='link-16'>/search/label/YouTube</b:widget-setting>
-                      <b:widget-setting name='sorting'>NONE</b:widget-setting>
-                      <b:widget-setting name='link-18'>https://storage.ibaguette.com/Disable_Ads.mp4</b:widget-setting>
-                      <b:widget-setting name='link-1'>https://ibaguette.com/cheatsheets</b:widget-setting>
-                      <b:widget-setting name='link-13'>https://ibaguette.com/cheatsheets</b:widget-setting>
-                      <b:widget-setting name='link-2'>https://ibaguette.com/cheatsheets/gcse</b:widget-setting>
-                      <b:widget-setting name='link-12'>https://ibaguette.com/cheatsheets/alevel</b:widget-setting>
-                      <b:widget-setting name='link-15'>/b</b:widget-setting>
-                      <b:widget-setting name='link-0'>/</b:widget-setting>
-                      <b:widget-setting name='link-14'>https://ibaguette.com/cheatsheets/alevel</b:widget-setting>
-                      <b:widget-setting name='link-11'>https://ibaguette.com/cheatsheets/alevel/computerscience</b:widget-setting>
-                      <b:widget-setting name='link-10'>https://ibaguette.com/cheatsheets/alevel/geography/all</b:widget-setting>
-                      <b:widget-setting name='text-9'>_A Level</b:widget-setting>
-                      <b:widget-setting name='link-9'>https://ibaguette.com/cheatsheets/alevel</b:widget-setting>
-                      <b:widget-setting name='text-8'>__View more GCSE resources...</b:widget-setting>
-                      <b:widget-setting name='link-7'>https://ibaguette.com/cheatsheets</b:widget-setting>
-                      <b:widget-setting name='link-8'>https://ibaguette.com/cheatsheets/gcse</b:widget-setting>
-                      <b:widget-setting name='link-5'>https://ibaguette.com/cheatsheets/gcse/geography/Paper2</b:widget-setting>
-                      <b:widget-setting name='link-6'>https://ibaguette.com/cheatsheets/gcse/geography/Paper1and2</b:widget-setting>
-                      <b:widget-setting name='link-3'>https://ibaguette.com/cheatsheets/gcse/ComputerScience</b:widget-setting>
-                      <b:widget-setting name='link-4'>https://ibaguette.com/cheatsheets/gcse/geography/Paper1</b:widget-setting>
+                      <b:widget-setting name='text-22'>Discord Server</b:widget-setting>
+                      <b:widget-setting name='text-23'>Disable Ads</b:widget-setting>
+                      <b:widget-setting name='text-9'>__Revision Sites and Advice</b:widget-setting>
+                      <b:widget-setting name='text-8'>__AQA History: Elizabethan England</b:widget-setting>
+                      <b:widget-setting name='text-20'>Our Discord Bots</b:widget-setting>
+                      <b:widget-setting name='text-21'>YouTube Content</b:widget-setting>
                       <b:widget-setting name='text-1'>Revision Resources</b:widget-setting>
                       <b:widget-setting name='text-0'>Home</b:widget-setting>
                       <b:widget-setting name='text-3'>__OCR Computer Science</b:widget-setting>
                       <b:widget-setting name='text-2'>_GCSE</b:widget-setting>
-                      <b:widget-setting name='text-5'>__AQA Geography: Paper 2</b:widget-setting>
-                      <b:widget-setting name='text-4'>__AQA Geography: Paper 1</b:widget-setting>
-                      <b:widget-setting name='text-7'>__</b:widget-setting>
-                      <b:widget-setting name='text-6'>__AQA Geography: Papers 1+2</b:widget-setting>
-                      <b:widget-setting name='text-15'>Our Discord Bots</b:widget-setting>
-                      <b:widget-setting name='text-16'>YouTube Content</b:widget-setting>
-                      <b:widget-setting name='text-17'>Discord Server</b:widget-setting>
-                      <b:widget-setting name='text-18'>Disable Ads</b:widget-setting>
-                      <b:widget-setting name='text-11'>__OCR Computer Science</b:widget-setting>
-                      <b:widget-setting name='text-12'>__Maths, Physics, Chemistry</b:widget-setting>
-                      <b:widget-setting name='text-13'>__</b:widget-setting>
-                      <b:widget-setting name='text-14'>__View more A Level resources...</b:widget-setting>
+                      <b:widget-setting name='text-5'>__AQA Human Geography </b:widget-setting>
+                      <b:widget-setting name='text-4'>__AQA Physical Geography</b:widget-setting>
+                      <b:widget-setting name='text-7'>__AQA History: Health and the People </b:widget-setting>
+                      <b:widget-setting name='text-6'>__AQA Geography: Papers 1 and 2</b:widget-setting>
+                      <b:widget-setting name='text-19'>__View more A Level resources...</b:widget-setting>
+                      <b:widget-setting name='text-15'>__OCR Geography: Paper 2</b:widget-setting>
+                      <b:widget-setting name='text-16'>__OCR Computer Science - All Content</b:widget-setting>
+                      <b:widget-setting name='text-17'>__Maths, Physics and Chemistry</b:widget-setting>
+                      <b:widget-setting name='text-18'>__</b:widget-setting>
+                      <b:widget-setting name='text-11'>__View more GCSE resources...</b:widget-setting>
+                      <b:widget-setting name='text-12'>_A Level</b:widget-setting>
+                      <b:widget-setting name='text-13'>__OCR Geography - All Content</b:widget-setting>
+                      <b:widget-setting name='text-14'>__OCR Geography: Paper 1</b:widget-setting>
+                      <b:widget-setting name='text-10'>__</b:widget-setting>
+                      <b:widget-setting name='link-17'>https://ibaguette.com/cheatsheets/alevel</b:widget-setting>
+                      <b:widget-setting name='link-16'>https://ibaguette.com/cheatsheets/alevel/computerscience</b:widget-setting>
+                      <b:widget-setting name='link-19'>https://ibaguette.com/cheatsheets/alevel</b:widget-setting>
+                      <b:widget-setting name='sorting'>NONE</b:widget-setting>
+                      <b:widget-setting name='link-18'>https://ibaguette.com/cheatsheets</b:widget-setting>
+                      <b:widget-setting name='link-1'>https://ibaguette.com/cheatsheets</b:widget-setting>
+                      <b:widget-setting name='link-13'>https://ibaguette.com/cheatsheets/alevel/geography/all</b:widget-setting>
+                      <b:widget-setting name='link-2'>https://ibaguette.com/cheatsheets/gcse</b:widget-setting>
+                      <b:widget-setting name='link-12'>https://ibaguette.com/cheatsheets/alevel</b:widget-setting>
+                      <b:widget-setting name='link-15'>https://ibaguette.com/cheatsheets/alevel/geography/paper2</b:widget-setting>
+                      <b:widget-setting name='link-0'>/</b:widget-setting>
+                      <b:widget-setting name='link-14'>https://ibaguette.com/cheatsheets/alevel/geography/paper1</b:widget-setting>
+                      <b:widget-setting name='link-11'>https://ibaguette.com/cheatsheets/gcse</b:widget-setting>
+                      <b:widget-setting name='link-10'>https://ibaguette.com/cheatsheets</b:widget-setting>
+                      <b:widget-setting name='link-9'>https://ibaguette.com/cheatsheets/gcse/subject-sites</b:widget-setting>
+                      <b:widget-setting name='link-7'>https://ibaguette.com/cheatsheets/gcse/history/health-and-the-people</b:widget-setting>
+                      <b:widget-setting name='link-8'>https://</b:widget-setting>
+                      <b:widget-setting name='link-5'>https://ibaguette.com/cheatsheets/gcse/geography/Paper2</b:widget-setting>
+                      <b:widget-setting name='link-6'>https://ibaguette.com/cheatsheets/gcse/geography/Paper1and2</b:widget-setting>
+                      <b:widget-setting name='link-3'>https://ibaguette.com/cheatsheets/gcse/ComputerScience</b:widget-setting>
+                      <b:widget-setting name='link-4'>https://ibaguette.com/cheatsheets/gcse/geography/Paper1</b:widget-setting>
+                      <b:widget-setting name='link-23'>https://storage.ibaguette.com/Disable_Ads.mp4</b:widget-setting>
+                      <b:widget-setting name='link-20'>/b</b:widget-setting>
+                      <b:widget-setting name='link-22'>https://discord.gg/GfetCXH</b:widget-setting>
+                      <b:widget-setting name='link-21'>/search/label/YouTube</b:widget-setting>
                     </b:widget-settings>
                     <b:includable id='main' var='this'>
       <b:include name='widget-title'/>
@@ -2296,7 +2306,7 @@ ul.share-b{grid-gap:10px}
               <b:widget-setting name='commentLabel'>$type={blogger}</b:widget-setting>
               <b:widget-setting name='style.textcolor'>#ffffff</b:widget-setting>
               <b:widget-setting name='showShareButtons'>true</b:widget-setting>
-              <b:widget-setting name='authorLabel'>Written by: </b:widget-setting>
+              <b:widget-setting name='authorLabel'>Written by:</b:widget-setting>
               <b:widget-setting name='showCommentLink'>true</b:widget-setting>
               <b:widget-setting name='style.urlcolor'>#ffffff</b:widget-setting>
               <b:widget-setting name='showAuthor'>true</b:widget-setting>
@@ -2304,7 +2314,7 @@ ul.share-b{grid-gap:10px}
               <b:widget-setting name='style.unittype'>TextAndImage</b:widget-setting>
               <b:widget-setting name='style.bgcolor'>#ffffff</b:widget-setting>
               <b:widget-setting name='timestampLabel'>&#8226;</b:widget-setting>
-              <b:widget-setting name='reactionsLabel'>Reactions:</b:widget-setting>
+              <b:widget-setting name='reactionsLabel'/>
               <b:widget-setting name='showAuthorProfile'>true</b:widget-setting>
               <b:widget-setting name='style.layout'>1x1</b:widget-setting>
               <b:widget-setting name='showLabels'>true</b:widget-setting>
@@ -2315,7 +2325,7 @@ ul.share-b{grid-gap:10px}
               <b:widget-setting name='showBacklinks'>false</b:widget-setting>
               <b:widget-setting name='style.bordercolor'>#ffffff</b:widget-setting>
               <b:widget-setting name='showInlineAds'>true</b:widget-setting>
-              <b:widget-setting name='showReactions'>true</b:widget-setting>
+              <b:widget-setting name='showReactions'>false</b:widget-setting>
             </b:widget-settings>
             <b:includable id='main' var='this'>
       <b:class cond='data:view.isMultipleItems' name='index-blog flex-col'/>
@@ -3967,7 +3977,7 @@ height: 100%;
                 <b:widget-setting name='shrinkToFit'>false</b:widget-setting>
                 <b:widget-setting name='displayWidth'>1198</b:widget-setting>
                 <b:widget-setting name='link'/>
-                <b:widget-setting name='caption'>iBaguette.com offers, amongst other things, a huge range of acclaimed revision material and advice for students, teachers, developers, professionals and more. The iBaguette team is made up of a small group who are passionate about education, technology, gaming, the Internet and lots more! We're completely dedicated to bringing free and unified access to intuitive, high-quality educational material all in a single place whilst collecting no personal data. We proudly collaborate with a range of educational institutions with teachers in schools, colleges and universities (and professionals in other organisations) relying on and contributing to our content. Join us in the pursuit of knowledge; explore iBaguette today!</b:widget-setting>
+                <b:widget-setting name='caption'><![CDATA[iBaguette.com offers, amongst other things, a huge range of acclaimed revision material and advice for students, teachers, developers, professionals and more. The iBaguette team is made up of a small group who are passionate about education, technology, gaming, the Internet and lots more! We're completely dedicated to bringing free and unified access to intuitive, high-quality educational material all in a single place whilst collecting no personal data. We proudly collaborate with a range of educational institutions with teachers in schools, colleges and universities (and professionals in other organisations) relying on and contributing to our content. Join us in the pursuit of knowledge; explore iBaguette today!]]></b:widget-setting>
               </b:widget-settings>
               <b:includable id='main' var='this'>
       <b:include name='widget-title'/>
@@ -4015,7 +4025,7 @@ height: 100%;
             <b:widget-settings>
               <b:widget-setting name='link-3'>mailto:ibaguette-website-enquiries@ibaguette.com</b:widget-setting>
               <b:widget-setting name='sorting'>NONE</b:widget-setting>
-              <b:widget-setting name='link-4'>https://github.com/Draggie306/iBaguette/commit/a8f637cb19e48d7594e621daa6af0331b994c669</b:widget-setting>
+              <b:widget-setting name='link-4'>https://github.com/Draggie306/iBaguette/commit/64bf7bf3fd5029b8ade781540790b600a834d5af</b:widget-setting>
               <b:widget-setting name='text-1'>About Us</b:widget-setting>
               <b:widget-setting name='link-1'>https://www.ibaguette.com/2023/04/what-is-iBaguette.html</b:widget-setting>
               <b:widget-setting name='text-0'>Home</b:widget-setting>
@@ -4023,7 +4033,7 @@ height: 100%;
               <b:widget-setting name='text-3'>Contact Us</b:widget-setting>
               <b:widget-setting name='link-0'>/</b:widget-setting>
               <b:widget-setting name='text-2'>Privacy Policy</b:widget-setting>
-              <b:widget-setting name='text-4'>Commit: a8f637c</b:widget-setting>
+              <b:widget-setting name='text-4'>Commit: 64bf7bf</b:widget-setting>
             </b:widget-settings>
             <b:includable id='main' var='this'>
       <b:include name='widget-title'/>
