@@ -4025,7 +4025,7 @@ height: 100%;
             <b:widget-settings>
               <b:widget-setting name='link-3'>mailto:ibaguette-website-enquiries@ibaguette.com</b:widget-setting>
               <b:widget-setting name='sorting'>NONE</b:widget-setting>
-              <b:widget-setting name='link-4'>https://github.com/Draggie306/iBaguette/commit/64bf7bf3fd5029b8ade781540790b600a834d5af</b:widget-setting>
+              <b:widget-setting name='link-4'>https://github.com/Draggie306/iBaguette/commit/dd2694940e03835d07636a1a81df5eddfd42eebc</b:widget-setting>
               <b:widget-setting name='text-1'>About Us</b:widget-setting>
               <b:widget-setting name='link-1'>https://www.ibaguette.com/2023/04/what-is-iBaguette.html</b:widget-setting>
               <b:widget-setting name='text-0'>Home</b:widget-setting>
@@ -4033,7 +4033,7 @@ height: 100%;
               <b:widget-setting name='text-3'>Contact Us</b:widget-setting>
               <b:widget-setting name='link-0'>/</b:widget-setting>
               <b:widget-setting name='text-2'>Privacy Policy</b:widget-setting>
-              <b:widget-setting name='text-4'>Commit: 64bf7bf</b:widget-setting>
+              <b:widget-setting name='text-4'>Commit: dd26949</b:widget-setting>
             </b:widget-settings>
             <b:includable id='main' var='this'>
       <b:include name='widget-title'/>
