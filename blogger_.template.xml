@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <!DOCTYPE html>
-<html b:css='false' b:defaultwidgetversion='2' b:layoutsVersion='3' b:responsive='true' b:templateVersion='1.0.0' expr:class='data:blog.languageDirection' expr:dir='data:blog.languageDirection' expr:lang='data:blog.localeUnderscoreDelimited' xmlns='http://www.w3.org/1999/xhtml' xmlns:b='http://www.google.com/2005/gml/b' xmlns:data='http://www.google.com/2005/gml/data' xmlns:expr='http://www.google.com/2005/gml/expr'>
+<html b:css='false' b:defaultwidgetversion='2' b:layoutsVersion='3' b:responsive='true' b:templateVersion='1.0.0' expr:class='data:blog.languageDirection' expr:dir='data:blog.languageDirection' lang='en-gb' xmlns='http://www.w3.org/1999/xhtml' xmlns:b='http://www.google.com/2005/gml/b' xmlns:data='http://www.google.com/2005/gml/data' xmlns:expr='http://www.google.com/2005/gml/expr'>
 <head>
 <b:include name='theme-head'/>
 <b:if cond='!data:view.isLayoutMode'>
@@ -26,10 +26,10 @@ Author Url:   https://probloggertemplates.com/
     <Variable name="sidebar.width" description="Sidebar Width" type="length" default="300px" min="250px" max="336px" value="300px"/>
 </Group>
 <Group description="Fonts" selector="body">
-    <Variable name="main.font" description="Main Font" type="font" family="Maven Pro" default="normal 400 14px $(family)" value="normal 400 14px $(family)"/>
-    <Variable name="menu.font" description="Menu Font" type="font" family="Maven Pro" default="normal 400 14px $(family)" value="normal 400 14px $(family)"/>
+    <Variable name="main.font" description="Main Font" type="font" family="Maven Pro" default="normal 400 14px $(family)" value="normal 400 14px Arial, Tahoma, Helvetica, FreeSans, sans-serif"/>
+    <Variable name="menu.font" description="Menu Font" type="font" family="Maven Pro" default="normal 400 14px $(family)" value="normal 400 14px Arial, Tahoma, Helvetica, FreeSans, sans-serif"/>
     <Variable name="title.font" description="Title Font" type="font" family="Poppins" default="normal 400 14px $(family)" value="normal 400 14px $(family)"/>
-    <Variable name="text.font" description="Text Font" type="font" family="Maven Pro" default="normal 400 14px $(family)" value="normal 400 14px $(family)"/>
+    <Variable name="text.font" description="Text Font" type="font" family="Maven Pro" default="normal 400 14px $(family)" value="normal 400 14px Arial, Tahoma, Helvetica, FreeSans, sans-serif"/>
 </Group>
 <Group description="Background" selector="body">
 	<Variable name="background.color" description="Body Background (Boxed)" type="color" default="#f4f6fa"  value="#f4f6fa"/>
@@ -1545,7 +1545,7 @@ ul.share-b{grid-gap:10px}
           <div class='entry-meta'>
             <div class='align-left'>
               <b:class cond='data:allBylineItems.timestamp' name='has-time'/>
-              <b:if cond='data:allBylineItems.author'><span class='entry-avatar'><span class='avatar' expr:data-src='data:post.author.authorPhoto.image ? resizeImage(data:post.author.authorPhoto.image, 72, &quot;1:1&quot;) : &quot;https://1.bp.blogspot.com/-QN2lgvtYZco/YN3mUSryAVI/AAAAAAAAADs/KrR-etCcvUMcPl06jopTs9pzq59IAXhMQCLcBGAsYHQ/s72-c/avatar.jpg&quot;'/></span></b:if>
+              <b:if cond='data:allBylineItems.author'><span class='entry-avatar'><span class='avatar' expr:data-src='data:post.author.authorPhoto.image ? resizeImage(data:post.author.authorPhoto.image, 72, &quot;1:1&quot;) : &quot;https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEivep5BeRmeF8CANFAnmsFDgSKbJROA-sSzL4xLFNfoPg7qEAeH7zq8eAeXQq9EWrOrk-aScYN4W4MVFyhAW7VmX16teDh6xjQZ8KdC4B5NCLmipnOSt78BudMKYSGE4DY7jX-mDaqzVYQ/s72-c/avatar.jpg&quot;'/></span></b:if>
               <b:tag class='al-items' cond='data:allBylineItems.author and data:allBylineItems.timestamp' name='div'>
               <b:include cond='data:allBylineItems.author' data='post' name='postAuthor'/>
               <b:include cond='data:allBylineItems.timestamp' data='post' name='postTimestamp'/>
@@ -1671,7 +1671,7 @@ ul.share-b{grid-gap:10px}
     <b:includable id='postFooterAuthorProfile' var='post'>
       <div class='about-author p-widget'>
         <div class='author-avatar entry-avatar'>
-          <span class='avatar' expr:data-src='data:post.author.authorPhoto.image ? resizeImage(data:post.author.authorPhoto.image, 72, &quot;1:1&quot;) : &quot;https://1.bp.blogspot.com/-QN2lgvtYZco/YN3mUSryAVI/AAAAAAAAADs/KrR-etCcvUMcPl06jopTs9pzq59IAXhMQCLcBGAsYHQ/s72-c/avatar.jpg&quot;'/>
+          <span class='avatar' expr:data-src='data:post.author.authorPhoto.image ? resizeImage(data:post.author.authorPhoto.image, 72, &quot;1:1&quot;) : &quot;https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEivep5BeRmeF8CANFAnmsFDgSKbJROA-sSzL4xLFNfoPg7qEAeH7zq8eAeXQq9EWrOrk-aScYN4W4MVFyhAW7VmX16teDh6xjQZ8KdC4B5NCLmipnOSt78BudMKYSGE4DY7jX-mDaqzVYQ/s72-c/avatar.jpg&quot;'/>
         </div>
         <div class='author-description flex-col'>
           <h3 class='author-title'><b:tag cond='data:post.author.profileUrl' expr:alt='data:post.author.name' expr:href='data:post.author.profileUrl' name='a' rel='nofollow noopener' target='_blank'><data:post.author.name/></b:tag></h3>
@@ -2028,7 +2028,7 @@ ul.share-b{grid-gap:10px}
       <img class='profile-img' expr:alt='data:messages.myPhoto' expr:src='resizeImage(data:authorPhoto.image, 50, &quot;1:1&quot;)'/>
     </b:includable>
     <b:includable id='defaultProfileImage' var='this'>
-      <img class='profile-img' expr:alt='data:messages.myPhoto' src='https://1.bp.blogspot.com/-QN2lgvtYZco/YN3mUSryAVI/AAAAAAAAADs/KrR-etCcvUMcPl06jopTs9pzq59IAXhMQCLcBGAsYHQ/w50-h50-p-k-no-nu/avatar.jpg'/>
+      <img class='profile-img' expr:alt='data:messages.myPhoto' src='https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEivep5BeRmeF8CANFAnmsFDgSKbJROA-sSzL4xLFNfoPg7qEAeH7zq8eAeXQq9EWrOrk-aScYN4W4MVFyhAW7VmX16teDh6xjQZ8KdC4B5NCLmipnOSt78BudMKYSGE4DY7jX-mDaqzVYQ/w50-h50-p-k-no-nu/avatar.jpg'/>
     </b:includable>
     <b:includable id='userProfileInfo' var='this'>
       <div class='profile-info'>
@@ -2121,7 +2121,7 @@ ul.share-b{grid-gap:10px}
       <b:include name='image-content'/>
     </b:includable>
                     </b:widget>
-                    <b:widget id='Header1' locked='false' title='The Home of Free, Quality &amp;amp; Complete Resources: iBaguette (Header)' type='Header' version='2' visible='false'>
+                    <b:widget id='Header1' locked='false' title='iBaguette: The Home of Free, Quality &amp;amp; Complete Resources (Header)' type='Header' version='2' visible='false'>
                       <b:widget-settings>
                         <b:widget-setting name='displayUrl'>https://storage.ibaguette.com/CatswirlOptimised.webp</b:widget-setting>
                         <b:widget-setting name='displayHeight'>50</b:widget-setting>
@@ -2179,55 +2179,49 @@ ul.share-b{grid-gap:10px}
                 <b:section class='xdfcb-main-menu' id='xdfcb-main-menu' maxwidgets='1' name='Header Menu' showaddelement='no'>
                   <b:widget id='LinkList200' locked='false' title='Navbar' type='LinkList' visible='true'>
                     <b:widget-settings>
-                      <b:widget-setting name='text-22'>Discord Server</b:widget-setting>
-                      <b:widget-setting name='text-23'>Disable Ads</b:widget-setting>
-                      <b:widget-setting name='text-9'>__Revision Sites and Advice</b:widget-setting>
-                      <b:widget-setting name='text-8'>__AQA History: Elizabethan England</b:widget-setting>
-                      <b:widget-setting name='text-20'>Our Discord Bots</b:widget-setting>
-                      <b:widget-setting name='text-21'>YouTube Content</b:widget-setting>
-                      <b:widget-setting name='text-1'>Revision Resources</b:widget-setting>
-                      <b:widget-setting name='text-0'>Home</b:widget-setting>
-                      <b:widget-setting name='text-3'>__OCR Computer Science</b:widget-setting>
-                      <b:widget-setting name='text-2'>_GCSE</b:widget-setting>
-                      <b:widget-setting name='text-5'>__AQA Human Geography </b:widget-setting>
-                      <b:widget-setting name='text-4'>__AQA Physical Geography</b:widget-setting>
-                      <b:widget-setting name='text-7'>__AQA History: Health and the People </b:widget-setting>
-                      <b:widget-setting name='text-6'>__AQA Geography: Papers 1 and 2</b:widget-setting>
-                      <b:widget-setting name='text-19'>__View more A Level resources...</b:widget-setting>
-                      <b:widget-setting name='text-15'>__OCR Geography: Paper 2</b:widget-setting>
-                      <b:widget-setting name='text-16'>__OCR Computer Science - All Content</b:widget-setting>
-                      <b:widget-setting name='text-17'>__Maths, Physics and Chemistry</b:widget-setting>
-                      <b:widget-setting name='text-18'>__</b:widget-setting>
-                      <b:widget-setting name='text-11'>__View more GCSE resources...</b:widget-setting>
-                      <b:widget-setting name='text-12'>_A Level</b:widget-setting>
-                      <b:widget-setting name='text-13'>__OCR Geography - All Content</b:widget-setting>
-                      <b:widget-setting name='text-14'>__OCR Geography: Paper 1</b:widget-setting>
-                      <b:widget-setting name='text-10'>__</b:widget-setting>
-                      <b:widget-setting name='link-17'>https://ibaguette.com/cheatsheets/alevel</b:widget-setting>
-                      <b:widget-setting name='link-16'>https://ibaguette.com/cheatsheets/alevel/computerscience</b:widget-setting>
-                      <b:widget-setting name='link-19'>https://ibaguette.com/cheatsheets/alevel</b:widget-setting>
+                      <b:widget-setting name='text-10'>_View more GCSE resources...</b:widget-setting>
+                      <b:widget-setting name='link-17'>https://ibaguette.com/cheatsheets</b:widget-setting>
+                      <b:widget-setting name='link-16'>https://ibaguette.com/cheatsheets/alevel</b:widget-setting>
+                      <b:widget-setting name='link-19'>/b</b:widget-setting>
                       <b:widget-setting name='sorting'>NONE</b:widget-setting>
-                      <b:widget-setting name='link-18'>https://ibaguette.com/cheatsheets</b:widget-setting>
-                      <b:widget-setting name='link-1'>https://ibaguette.com/cheatsheets</b:widget-setting>
-                      <b:widget-setting name='link-13'>https://ibaguette.com/cheatsheets/alevel/geography/all</b:widget-setting>
-                      <b:widget-setting name='link-2'>https://ibaguette.com/cheatsheets/gcse</b:widget-setting>
-                      <b:widget-setting name='link-12'>https://ibaguette.com/cheatsheets/alevel</b:widget-setting>
-                      <b:widget-setting name='link-15'>https://ibaguette.com/cheatsheets/alevel/geography/paper2</b:widget-setting>
+                      <b:widget-setting name='link-18'>https://ibaguette.com/cheatsheets/alevel</b:widget-setting>
+                      <b:widget-setting name='link-1'>https://ibaguette.com/cheatsheets/gcse</b:widget-setting>
+                      <b:widget-setting name='link-13'>https://ibaguette.com/cheatsheets/alevel/geography/paper1</b:widget-setting>
+                      <b:widget-setting name='link-2'>https://ibaguette.com/cheatsheets/gcse/computerscience</b:widget-setting>
+                      <b:widget-setting name='link-12'>https://ibaguette.com/cheatsheets/alevel/geography/all</b:widget-setting>
+                      <b:widget-setting name='link-15'>https://ibaguette.com/cheatsheets/alevel/computerscience</b:widget-setting>
                       <b:widget-setting name='link-0'>/</b:widget-setting>
-                      <b:widget-setting name='link-14'>https://ibaguette.com/cheatsheets/alevel/geography/paper1</b:widget-setting>
-                      <b:widget-setting name='link-11'>https://ibaguette.com/cheatsheets/gcse</b:widget-setting>
-                      <b:widget-setting name='link-10'>https://ibaguette.com/cheatsheets</b:widget-setting>
-                      <b:widget-setting name='link-9'>https://ibaguette.com/cheatsheets/gcse/subject-sites</b:widget-setting>
-                      <b:widget-setting name='link-7'>https://ibaguette.com/cheatsheets/gcse/history/health-and-the-people</b:widget-setting>
-                      <b:widget-setting name='link-8'>https://</b:widget-setting>
+                      <b:widget-setting name='link-14'>https://ibaguette.com/cheatsheets/alevel/geography/paper2</b:widget-setting>
+                      <b:widget-setting name='link-11'>https://ibaguette.com/cheatsheets/alevel</b:widget-setting>
+                      <b:widget-setting name='link-10'>https://ibaguette.com/cheatsheets/gcse</b:widget-setting>
+                      <b:widget-setting name='text-9'>_</b:widget-setting>
+                      <b:widget-setting name='link-9'>https://ibaguette.com/cheatsheets</b:widget-setting>
+                      <b:widget-setting name='text-8'>_Revision Sites and Advice</b:widget-setting>
+                      <b:widget-setting name='link-7'>https://ibaguette.com/cheatsheets/gcse/history/elizabethan-england</b:widget-setting>
+                      <b:widget-setting name='text-20'>Discord Server</b:widget-setting>
+                      <b:widget-setting name='link-8'>https://ibaguette.com/cheatsheets/gcse/subject-sites</b:widget-setting>
                       <b:widget-setting name='link-5'>https://ibaguette.com/cheatsheets/gcse/geography/Paper2</b:widget-setting>
-                      <b:widget-setting name='link-6'>https://ibaguette.com/cheatsheets/gcse/geography/Paper1and2</b:widget-setting>
-                      <b:widget-setting name='link-3'>https://ibaguette.com/cheatsheets/gcse/ComputerScience</b:widget-setting>
+                      <b:widget-setting name='link-6'>https://ibaguette.com/cheatsheets/gcse/history/health-and-the-people</b:widget-setting>
+                      <b:widget-setting name='link-3'>https://ibaguette.com/cheatsheets/gcse/geography/Paper1and2</b:widget-setting>
                       <b:widget-setting name='link-4'>https://ibaguette.com/cheatsheets/gcse/geography/Paper1</b:widget-setting>
-                      <b:widget-setting name='link-23'>https://storage.ibaguette.com/Disable_Ads.mp4</b:widget-setting>
-                      <b:widget-setting name='link-20'>/b</b:widget-setting>
-                      <b:widget-setting name='link-22'>https://discord.gg/GfetCXH</b:widget-setting>
-                      <b:widget-setting name='link-21'>/search/label/YouTube</b:widget-setting>
+                      <b:widget-setting name='text-1'>GCSE Revision Resources</b:widget-setting>
+                      <b:widget-setting name='text-0'>Home</b:widget-setting>
+                      <b:widget-setting name='text-3'>_AQA Geography</b:widget-setting>
+                      <b:widget-setting name='text-2'>_OCR Computer Science</b:widget-setting>
+                      <b:widget-setting name='text-5'>__AQA Human Geography (Paper 2)</b:widget-setting>
+                      <b:widget-setting name='text-4'>__AQA Physical Geography (Paper 1)</b:widget-setting>
+                      <b:widget-setting name='text-7'>_AQA History: Elizabethan England</b:widget-setting>
+                      <b:widget-setting name='text-6'>_AQA History: Health and the People </b:widget-setting>
+                      <b:widget-setting name='text-19'>Discord Bots</b:widget-setting>
+                      <b:widget-setting name='text-15'>_OCR Computer Science - All Content</b:widget-setting>
+                      <b:widget-setting name='text-16'>_Maths, Physics and Chemistry</b:widget-setting>
+                      <b:widget-setting name='text-17'>_</b:widget-setting>
+                      <b:widget-setting name='text-18'>_View more A Level resources...</b:widget-setting>
+                      <b:widget-setting name='text-11'>A-Level Revision Resources</b:widget-setting>
+                      <b:widget-setting name='link-20'>https://discord.gg/GfetCXH</b:widget-setting>
+                      <b:widget-setting name='text-12'>_OCR Geography - All Content</b:widget-setting>
+                      <b:widget-setting name='text-13'>_OCR Geography: Paper 1</b:widget-setting>
+                      <b:widget-setting name='text-14'>_OCR Geography: Paper 2</b:widget-setting>
                     </b:widget-settings>
                     <b:includable id='main' var='this'>
       <b:include name='widget-title'/>
@@ -2779,7 +2773,7 @@ ul.share-b{grid-gap:10px}
               <b:widget-setting name='numItemsToShow'>10</b:widget-setting>
               <b:widget-setting name='showThumbnails'>true</b:widget-setting>
               <b:widget-setting name='showSnippets'>true</b:widget-setting>
-              <b:widget-setting name='timeRange'>LAST_MONTH</b:widget-setting>
+              <b:widget-setting name='timeRange'>LAST_WEEK</b:widget-setting>
             </b:widget-settings>
             <b:includable id='main' var='this'>
             <b:include name='widget-title'/>
@@ -2896,8 +2890,8 @@ ul.share-b{grid-gap:10px}
           </b:widget>
           <b:widget id='HTML21' locked='false' title='Ad Code' type='HTML' visible='true'>
             <b:widget-settings>
-              <b:widget-setting name='content'>&lt;a class=&quot;sora-ads-full&quot; href=&quot;javascript:;&quot;&gt;Responsive Advertisement&lt;/a&gt;
-&lt;style&gt;
+              <b:widget-setting name='content'><![CDATA[<a class="sora-ads-full" href="javascript:;">Responsive Advertisement</a>
+<style>
 .sora-ads-full {
   display: block;
     background-color: #eee;
@@ -2909,7 +2903,7 @@ ul.share-b{grid-gap:10px}
     line-height: 90px;
     border: 1px solid #ccc;
 }
-&lt;/style&gt;</b:widget-setting>
+</style>]]></b:widget-setting>
             </b:widget-settings>
             <b:includable id='main'>
       <b:include name='html-content'/>
@@ -3435,7 +3429,7 @@ ul.share-b{grid-gap:10px}
   </ul>
 </b:includable>
           </b:widget>
-          <b:widget id='Label3' locked='false' title='Categories' type='Label' version='2' visible='true'>
+          <b:widget id='Label3' locked='false' title='Categories' type='Label' version='2' visible='false'>
             <b:widget-settings>
               <b:widget-setting name='sorting'>ALPHA</b:widget-setting>
               <b:widget-setting name='display'>LIST</b:widget-setting>
@@ -3570,11 +3564,11 @@ ul.share-b{grid-gap:10px}
           </b:widget>
           <b:widget id='HTML1' locked='false' title='Featured Video:' type='HTML' visible='false'>
             <b:widget-settings>
-              <b:widget-setting name='content'>&lt;div class=&quot;videoWrapper&quot;&gt;
-    &lt;!-- Copy &amp; Pasted from YouTube --&gt;
-    &lt;iframe width=&quot;560&quot; height=&quot;349&quot; src=&quot;https://www.youtube.com/embed/LxBnUuhz7k4&quot; frameborder=&quot;0&quot; allowfullscreen&gt;&lt;/iframe&gt;
-&lt;/div&gt;
-&lt;style&gt;
+              <b:widget-setting name='content'><![CDATA[<div class="videoWrapper">
+    <!-- Copy & Pasted from YouTube -->
+    <iframe width="560" height="349" src="https://www.youtube.com/embed/LxBnUuhz7k4" frameborder="0" allowfullscreen></iframe>
+</div>
+<style>
 .videoWrapper {
 position: relative;
 padding-bottom: 56.25%; /* 16:9 */
@@ -3588,7 +3582,7 @@ left: 0;
 width: 100%;
 height: 100%;
 }
-&lt;/style&gt;</b:widget-setting>
+</style>]]></b:widget-setting>
             </b:widget-settings>
             <b:includable id='main'>
       <b:include name='html-content'/>
@@ -4018,22 +4012,22 @@ height: 100%;
     <div class='footer-bar flex-c'>
       <div class='container row-x1 flex-sb'>
         <div class='footer-copyright' id='footer-copyright'>
-          <span class='copyright-text'>&#169; iBaguette (Draggie&#8482;) 2018-2023. Page design from <a href='https://probloggertemplates.com/' id='probtemplates' title='ProBloggerTemplates'>ProBloggerTemplates</a></span>
+          <span class='copyright-text'>&#169; iBaguette 2018-2025. Page design from <a href='https://probloggertemplates.com/' id='probtemplates' title='ProBloggerTemplates'>ProBloggerTemplates</a></span>
         </div>
         <b:section class='footer-menu' id='footer-menu' maxwidgets='1' name='Footer Menu' showaddelement='yes'>
           <b:widget id='LinkList204' locked='true' title='' type='LinkList' visible='true'>
             <b:widget-settings>
               <b:widget-setting name='link-3'>mailto:ibaguette-website-enquiries@ibaguette.com</b:widget-setting>
               <b:widget-setting name='sorting'>NONE</b:widget-setting>
-              <b:widget-setting name='link-4'>https://github.com/Draggie306/iBaguette/commit/dd2694940e03835d07636a1a81df5eddfd42eebc</b:widget-setting>
-              <b:widget-setting name='text-1'>About Us</b:widget-setting>
+              <b:widget-setting name='link-4'>https://github.com/Draggie306/iBaguette/commit/9a3c27c5506331f274bc61fe1d14cb39d1427a57</b:widget-setting>
+              <b:widget-setting name='text-1'>About iBaguette</b:widget-setting>
               <b:widget-setting name='link-1'>https://www.ibaguette.com/2023/04/what-is-iBaguette.html</b:widget-setting>
               <b:widget-setting name='text-0'>Home</b:widget-setting>
-              <b:widget-setting name='link-2'>https://privacy.ibaguette.com/</b:widget-setting>
+              <b:widget-setting name='link-2'>https://terms.ibaguette.com/</b:widget-setting>
               <b:widget-setting name='text-3'>Contact Us</b:widget-setting>
               <b:widget-setting name='link-0'>/</b:widget-setting>
-              <b:widget-setting name='text-2'>Privacy Policy</b:widget-setting>
-              <b:widget-setting name='text-4'>Commit: dd26949</b:widget-setting>
+              <b:widget-setting name='text-2'><![CDATA[Privacy & Terms]]></b:widget-setting>
+              <b:widget-setting name='text-4'>Commit: 9a3c27c</b:widget-setting>
             </b:widget-settings>
             <b:includable id='main' var='this'>
       <b:include name='widget-title'/>
