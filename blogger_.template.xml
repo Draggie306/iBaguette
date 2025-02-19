@@ -2182,7 +2182,7 @@ ul.share-b{grid-gap:10px}
                       <b:widget-setting name='text-10'>_View more GCSE resources...</b:widget-setting>
                       <b:widget-setting name='link-17'>https://ibaguette.com/cheatsheets</b:widget-setting>
                       <b:widget-setting name='link-16'>https://ibaguette.com/cheatsheets/alevel</b:widget-setting>
-                      <b:widget-setting name='link-19'>/b</b:widget-setting>
+                      <b:widget-setting name='link-19'>https://discord.gg/GfetCXH</b:widget-setting>
                       <b:widget-setting name='sorting'>NONE</b:widget-setting>
                       <b:widget-setting name='link-18'>https://ibaguette.com/cheatsheets/alevel</b:widget-setting>
                       <b:widget-setting name='link-1'>https://ibaguette.com/cheatsheets/gcse</b:widget-setting>
@@ -2198,7 +2198,6 @@ ul.share-b{grid-gap:10px}
                       <b:widget-setting name='link-9'>https://ibaguette.com/cheatsheets</b:widget-setting>
                       <b:widget-setting name='text-8'>_Revision Sites and Advice</b:widget-setting>
                       <b:widget-setting name='link-7'>https://ibaguette.com/cheatsheets/gcse/history/elizabethan-england</b:widget-setting>
-                      <b:widget-setting name='text-20'>Discord Server</b:widget-setting>
                       <b:widget-setting name='link-8'>https://ibaguette.com/cheatsheets/gcse/subject-sites</b:widget-setting>
                       <b:widget-setting name='link-5'>https://ibaguette.com/cheatsheets/gcse/geography/Paper2</b:widget-setting>
                       <b:widget-setting name='link-6'>https://ibaguette.com/cheatsheets/gcse/history/health-and-the-people</b:widget-setting>
@@ -2212,13 +2211,12 @@ ul.share-b{grid-gap:10px}
                       <b:widget-setting name='text-4'>__AQA Physical Geography (Paper 1)</b:widget-setting>
                       <b:widget-setting name='text-7'>_AQA History: Elizabethan England</b:widget-setting>
                       <b:widget-setting name='text-6'>_AQA History: Health and the People </b:widget-setting>
-                      <b:widget-setting name='text-19'>Discord Bots</b:widget-setting>
+                      <b:widget-setting name='text-19'>Discord Server</b:widget-setting>
                       <b:widget-setting name='text-15'>_OCR Computer Science - All Content</b:widget-setting>
                       <b:widget-setting name='text-16'>_Maths, Physics and Chemistry</b:widget-setting>
                       <b:widget-setting name='text-17'>_</b:widget-setting>
                       <b:widget-setting name='text-18'>_View more A Level resources...</b:widget-setting>
-                      <b:widget-setting name='text-11'>A-Level Revision Resources</b:widget-setting>
-                      <b:widget-setting name='link-20'>https://discord.gg/GfetCXH</b:widget-setting>
+                      <b:widget-setting name='text-11'>A Level Revision Resources</b:widget-setting>
                       <b:widget-setting name='text-12'>_OCR Geography - All Content</b:widget-setting>
                       <b:widget-setting name='text-13'>_OCR Geography: Paper 1</b:widget-setting>
                       <b:widget-setting name='text-14'>_OCR Geography: Paper 2</b:widget-setting>
@@ -4019,7 +4017,7 @@ height: 100%;
             <b:widget-settings>
               <b:widget-setting name='link-3'>mailto:ibaguette-website-enquiries@ibaguette.com</b:widget-setting>
               <b:widget-setting name='sorting'>NONE</b:widget-setting>
-              <b:widget-setting name='link-4'>https://github.com/Draggie306/iBaguette/commit/9a3c27c5506331f274bc61fe1d14cb39d1427a57</b:widget-setting>
+              <b:widget-setting name='link-4'>https://github.com/Draggie306/iBaguette/commit/c61f029fb3053435c37192e21fac5ccedb7bde68</b:widget-setting>
               <b:widget-setting name='text-1'>About iBaguette</b:widget-setting>
               <b:widget-setting name='link-1'>https://www.ibaguette.com/2023/04/what-is-iBaguette.html</b:widget-setting>
               <b:widget-setting name='text-0'>Home</b:widget-setting>
@@ -4027,7 +4025,7 @@ height: 100%;
               <b:widget-setting name='text-3'>Contact Us</b:widget-setting>
               <b:widget-setting name='link-0'>/</b:widget-setting>
               <b:widget-setting name='text-2'><![CDATA[Privacy & Terms]]></b:widget-setting>
-              <b:widget-setting name='text-4'>Commit: 9a3c27c</b:widget-setting>
+              <b:widget-setting name='text-4'>Commit: c61f029</b:widget-setting>
             </b:widget-settings>
             <b:includable id='main' var='this'>
       <b:include name='widget-title'/>
