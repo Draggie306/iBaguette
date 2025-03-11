@@ -1,4 +1,4 @@
-iBaguette.com is my first website. This repo serves to host the core content and HTML that makes the main.
+iBaguette.com is my first website. This repo serves to host the core content and HTML that makes the main site work.
 
 ## What is iBaguette?
 iBaguette is a UK-based open-source and privacy-centric website that offers various resources and tools to improve YOUR life! It provides popular and effective GCSE and A-level revision cheat sheets, coding challenges, and other revision resources for subjects such as French vocabulary, geography, biology, and sciences. 
