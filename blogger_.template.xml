@@ -3993,7 +3993,7 @@ height: 100%;
             <b:widget-settings>
               <b:widget-setting name='link-3'>mailto:ibaguette-website-enquiries@ibaguette.com</b:widget-setting>
               <b:widget-setting name='sorting'>NONE</b:widget-setting>
-              <b:widget-setting name='link-4'>https://github.com/Draggie306/iBaguette/commit/51602d5e8e0c19a96dd435c482dacdf83fe4f0b4</b:widget-setting>
+              <b:widget-setting name='link-4'>https://github.com/Draggie306/iBaguette/commit/44dbc85754b09f7fb0eea1d3509b742cac07f24b</b:widget-setting>
               <b:widget-setting name='text-1'>About iBaguette</b:widget-setting>
               <b:widget-setting name='link-1'>https://www.ibaguette.com/2023/04/what-is-iBaguette.html</b:widget-setting>
               <b:widget-setting name='text-0'>Home</b:widget-setting>
@@ -4001,7 +4001,7 @@ height: 100%;
               <b:widget-setting name='text-3'>Contact Us</b:widget-setting>
               <b:widget-setting name='link-0'>/</b:widget-setting>
               <b:widget-setting name='text-2'><![CDATA[Privacy & Terms]]></b:widget-setting>
-              <b:widget-setting name='text-4'>Commit: 51602d5</b:widget-setting>
+              <b:widget-setting name='text-4'>Commit: 44dbc85</b:widget-setting>
             </b:widget-settings>
             <b:includable id='main' var='this'>
       <b:include name='widget-title'/>
@@ -4528,7 +4528,7 @@ height: 100%;
       if (!sub) return;
 
       // Inline fallback
-      sub.style.display = li.classList.contains("expanded") ? "" : "none";
+      sub.style.display = li.classList.contains("expanded") ? "block" : "none";
     });
   }
 
