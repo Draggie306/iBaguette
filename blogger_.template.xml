@@ -1,6 +1,10 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <!DOCTYPE html>
 <html b:css='false' b:defaultwidgetversion='2' b:layoutsVersion='3' b:responsive='true' b:templateVersion='1.0.0' expr:class='data:blog.languageDirection' expr:dir='data:blog.languageDirection' lang='en-gb' xmlns='http://www.w3.org/1999/xhtml' xmlns:b='http://www.google.com/2005/gml/b' xmlns:data='http://www.google.com/2005/gml/data' xmlns:expr='http://www.google.com/2005/gml/expr'>
+<!--
+  iBaguette Blogger theme cleaned up as of  2026-10-14
+  Focusing on correctness, progressive logic, and removing unused legacy code (jQuery!!).
+-->
 <head>
 <b:include name='theme-head'/>
 <b:if cond='!data:view.isLayoutMode'>
@@ -253,7 +257,7 @@ a,input,textarea,button{transition:all .0s ease}
 .no-sidebar #sidebar-wrapper{display:none}
 .entry-thumbnail,.entry-avatar,.comments .avatar-image-container{display:block;position:relative;overflow:hidden;background-color:var(--gray-bg);z-index:5;color:transparent}
 .thumbnail,.avatar{display:block;position:relative;width:100%;height:100%;background-size:cover;background-position:center center;background-repeat:no-repeat;z-index:1;transform-origin:center;opacity:0;transition:opacity .35s ease}
-.lazy-loaded{opacity:1} !important
+.lazy-loaded{opacity:1!important}
 .entry-thumbnail:hover .thumbnail,.cs:hover .entry-thumbnail .thumbnail{filter:brightness(1.03)}
 .is-ytimg:after{position:absolute;content:'\e038';top:50%;right:50%;font-family:'Material Icons Round';font-size:46px;color:#fff;font-weight:400;z-index:5;transform:translate(50%,-50%);text-shadow:0 0 40px rgba(0,0,0,0.67);opacity:.65}
 .sz-3.is-ytimg:after{transform:translate(50%,-50%) scale(.85)}
@@ -1060,7 +1064,7 @@ ul.share-b{grid-gap:10px}
       <meta expr:content='data:view.title.escaped' property='og:title'/>
       <meta expr:content='data:blog.title.escaped' property='og:site_name'/>
       <meta expr:content='data:view.description.escaped' property='og:description'/>
-      <meta content='https://www.ibaguette.com' property='og:url'/>
+      <meta expr:content='data:view.url.canonical' property='og:url'/>
       <b:tag cond='data:view.isMultipleItems and data:widgets.Blog.first.posts[0].featuredImage' expr:content='data:widgets.Blog.first.posts[0].featuredImage resizeImage 1600' name='meta' property='og:image'/>
       <b:tag cond='data:view.featuredImage' expr:content='data:view.featuredImage resizeImage 1600' name='meta' property='og:image'/>
       <!-- Twitter Meta Tags -->
@@ -1079,9 +1083,7 @@ ul.share-b{grid-gap:10px}
       <link href='//fonts.gstatic.com' rel='dns-prefetch'/>
       <link href='//cdnjs.cloudflare.com' rel='dns-prefetch'/>
       <link href='//cdn.ibaguette.com' rel='dns-prefetch'/>
-      <link href='//ibaguette.com' rel='dns-prefetch'/>
       <link href='//blogger.googleusercontent.com' rel='dns-prefetch'/>
-      <link href='//lh5.googleusercontent.com' rel='dns-prefetch'/>
       <link href='//www.blogger.com' rel='dns-prefetch'/>
       <!-- Site Info -->
       <meta content='blogger' name='generator'/>
@@ -1098,7 +1100,6 @@ ul.share-b{grid-gap:10px}
       <meta content='yes' name='apple-mobile-web-app-capable'/>
       <meta content='iBaguette' name='apple-mobile-web-app-title'/>
       <meta content='black' name='apple-mobile-web-app-status-bar-style'/>  
-      <meta content='#00acff' name='theme-color'/>
 
       <meta expr:content='data:skin.vars.main_color' name='theme-color'/>
       <b:include name='customOpenGraphMetaData'/>
@@ -1106,7 +1107,7 @@ ul.share-b{grid-gap:10px}
       <data:blog.feedLinks/><data:blog.meTag/>
       <b:if cond='data:view.isHomepage'>
         <!-- Schema Markup -->
-        <script type='application/ld+json'>{&quot;@context&quot;:&quot;http://schema.org&quot;,&quot;@type&quot;:&quot;WebSite&quot;,&quot;name&quot;:&quot;<data:view.title.escaped/>&quot;,&quot;url&quot;:&quot;<data:view.url.canonical/>&quot;,&quot;potentialAction&quot;:{&quot;@type&quot;:&quot;SearchAction&quot;,&quot;target&quot;:&quot;<data:view.url.canonical/>search?q={search_term_string}&quot;,&quot;query-input&quot;:&quot;required name=search_term_string&quot;}}</script>
+        <script type='application/ld+json'>{&quot;@context&quot;:&quot;https://schema.org&quot;,&quot;@type&quot;:&quot;WebSite&quot;,&quot;name&quot;:&quot;<data:view.title.escaped/>&quot;,&quot;url&quot;:&quot;<data:view.url.canonical/>&quot;,&quot;potentialAction&quot;:{&quot;@type&quot;:&quot;SearchAction&quot;,&quot;target&quot;:&quot;<data:view.url.canonical/>search?q={search_term_string}&quot;,&quot;query-input&quot;:&quot;required name=search_term_string&quot;}}</script>
       </b:if>
       <!-- Styles and Scripts -->
       <b:tag href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/fontawesome.min.css' name='link' rel='stylesheet'/>
@@ -1363,16 +1364,16 @@ ul.share-b{grid-gap:10px}
         <b:with value='data:view.url.canonical' var='shareUrl'>
           <b:with value='data:view.title.jsEscaped' var='shareTitle'>
             <ul class='share-b social color'>
-              <li class='facebook'><a class='fa-facebook btn pbt-window' data-height='500' data-width='520' expr:data-url='&quot;https://www.facebook.com/sharer.php?u=&quot; + data:shareUrl' href='#' rel='nofollow noopener' title='Facebook'/></li>
-              <li class='twitter'><a class='fa-twitter btn pbt-window' data-height='520' data-width='860' expr:data-url='&quot;https://twitter.com/intent/tweet?url=&quot; + data:shareUrl + &quot;&amp;text=&quot; + data:shareTitle' href='#' rel='nofollow noopener' title='Twitter'/></li>
-              <li class='whatsapp'><a class='fa-whatsapp btn pbt-window' data-height='520' data-width='860' expr:data-url='&quot;https://api.whatsapp.com/send?text=&quot; + data:shareTitle + &quot; | &quot; + data:shareUrl' href='#' rel='nofollow noopener' title='WhatsApp'/></li>
-              <li class='pinterest-p'><a class='fa-pinterest-p btn pbt-window' data-height='520' data-width='860' expr:data-url='&quot;https://www.pinterest.com/pin/create/button/?url=&quot; + data:shareUrl + &quot;&amp;media=&quot; + data:view.featuredImage + &quot;&amp;description=&quot; + data:shareTitle' href='#' rel='nofollow noopener' title='Pinterest'/></li>
-              <li class='linkedin'><a class='fa-linkedin-in btn pbt-window' data-height='520' data-width='860' expr:data-url='&quot;https://www.linkedin.com/shareArticle?mini=true&amp;url=&quot; + data:shareUrl + &quot;&amp;title=&quot; + data:shareTitle' href='#' rel='nofollow noopener' title='LinkedIn'/></li>
-              <li class='reddit'><a class='fa-reddit-alien btn pbt-window' data-height='520' data-width='860' expr:data-url='&quot;https://reddit.com/submit?url=&quot; + data:shareUrl + &quot;&amp;title=&quot; + data:shareTitle' href='#' rel='nofollow noopener' title='Reddit'/></li>
-              <li class='vk'><a class='fa-vk btn pbt-window' data-height='520' data-width='860' expr:data-url='&quot;https://vk.com/share.php?url=&quot; + data:shareUrl' href='#' rel='nofollow noopener' title='VKontakte'/></li>
-              <li class='tumblr'><a class='fa-tumblr btn pbt-window' data-height='520' data-width='860' expr:data-url='&quot;https://www.tumblr.com/share/link?url=&quot; + data:shareUrl + &quot;&amp;name=&quot; + data:shareTitle' href='#' rel='nofollow noopener' title='Tumblr'/></li>
-              <li class='telegram'><a class='fa-telegram-plane btn pbt-window' data-height='520' data-width='860' expr:data-url='&quot;https://telegram.me/share/url?url=&quot; + data:shareUrl + &quot;&amp;text=&quot; + data:shareTitle' href='#' rel='nofollow noopener' title='Telegram'/></li>
-              <li class='email'><a class='fa-email btn pbt-window' data-height='500' data-width='520' expr:data-url='&quot;mailto:?subject=&quot; + data:shareTitle + &quot;&amp;body=&quot; + data:shareUrl' href='#' rel='nofollow noopener' title='Email'/></li>
+              <li class='facebook'><a class='fa-facebook btn' expr:href='&quot;https://www.facebook.com/sharer.php?u=&quot; + data:shareUrl' rel='nofollow noopener noreferrer' target='_blank' title='Facebook'/></li>
+              <li class='twitter'><a class='fa-twitter btn' expr:href='&quot;https://twitter.com/intent/tweet?url=&quot; + data:shareUrl + &quot;&amp;text=&quot; + data:shareTitle' rel='nofollow noopener noreferrer' target='_blank' title='Twitter'/></li>
+              <li class='whatsapp'><a class='fa-whatsapp btn' expr:href='&quot;https://api.whatsapp.com/send?text=&quot; + data:shareTitle + &quot; | &quot; + data:shareUrl' rel='nofollow noopener noreferrer' target='_blank' title='WhatsApp'/></li>
+              <li class='pinterest-p'><a class='fa-pinterest-p btn' expr:href='&quot;https://www.pinterest.com/pin/create/button/?url=&quot; + data:shareUrl + &quot;&amp;media=&quot; + data:view.featuredImage + &quot;&amp;description=&quot; + data:shareTitle' rel='nofollow noopener noreferrer' target='_blank' title='Pinterest'/></li>
+              <li class='linkedin'><a class='fa-linkedin-in btn' expr:href='&quot;https://www.linkedin.com/shareArticle?mini=true&amp;url=&quot; + data:shareUrl + &quot;&amp;title=&quot; + data:shareTitle' rel='nofollow noopener noreferrer' target='_blank' title='LinkedIn'/></li>
+              <li class='reddit'><a class='fa-reddit-alien btn' expr:href='&quot;https://reddit.com/submit?url=&quot; + data:shareUrl + &quot;&amp;title=&quot; + data:shareTitle' rel='nofollow noopener noreferrer' target='_blank' title='Reddit'/></li>
+              <li class='vk'><a class='fa-vk btn' expr:href='&quot;https://vk.com/share.php?url=&quot; + data:shareUrl' rel='nofollow noopener noreferrer' target='_blank' title='VKontakte'/></li>
+              <li class='tumblr'><a class='fa-tumblr btn' expr:href='&quot;https://www.tumblr.com/share/link?url=&quot; + data:shareUrl + &quot;&amp;name=&quot; + data:shareTitle' rel='nofollow noopener noreferrer' target='_blank' title='Tumblr'/></li>
+              <li class='telegram'><a class='fa-telegram-plane btn' expr:href='&quot;https://telegram.me/share/url?url=&quot; + data:shareUrl + &quot;&amp;text=&quot; + data:shareTitle' rel='nofollow noopener noreferrer' target='_blank' title='Telegram'/></li>
+              <li class='email'><a class='fa-email btn' expr:href='&quot;mailto:?subject=&quot; + data:shareTitle + &quot;&amp;body=&quot; + data:shareUrl' rel='nofollow' title='Email'/></li>
             </ul>
           </b:with>
           <div class='modal-footer'>
@@ -1474,8 +1475,8 @@ ul.share-b{grid-gap:10px}
       <!-- Ajax Pagination on Index -->
       <div class='blog-pager' id='blog-pager'>
         <b:if cond='data:olderPageUrl'>
-          <a class='blog-pager-older-link load-more btn' expr:data-load='data:olderPageUrl.canonical' href='#' id='xdfcb-load-more-link'><b:include data='{ message: &quot;loadMorePosts&quot; }' name='theme-custom-lang'/></a>
-          <span class='loading'><div class='loader'/></span>
+          <a class='blog-pager-older-link load-more btn' expr:data-load='data:olderPageUrl.canonical' expr:href='data:olderPageUrl.canonical' id='xdfcb-load-more-link'><b:include data='{ message: &quot;loadMorePosts&quot; }' name='theme-custom-lang'/></a>
+          <span class='loading'><span class='loader'/></span>
           <span class='no-more load-more btn'><data:messages.noResultsFound/></span>
           <b:else/>
           <span class='no-more load-more btn show'><data:messages.noResultsFound/></span>
@@ -1645,10 +1646,10 @@ ul.share-b{grid-gap:10px}
       <!-- Post Breadcrumbs -->
       <b:if cond='data:view.isPost'>
         <b:if cond='data:skin.vars.breadcrumb == &quot;1px&quot;'><nav id='breadcrumb'><a class='home' expr:href='data:blog.homepageUrl'><data:messages.home/></a><b:if cond='data:post.labels'><em class='separator'/><a class='label' expr:href='data:post.labels.first.url'><data:post.labels.first.name/></a></b:if></nav></b:if>
-        <script type='application/ld+json'>{&quot;@context&quot;:&quot;http://schema.org&quot;,&quot;@type&quot;:&quot;BreadcrumbList&quot;,&quot;itemListElement&quot;:[{&quot;@type&quot;:&quot;ListItem&quot;,&quot;position&quot;:1,&quot;name&quot;:&quot;<data:messages.home.jsonEscaped/>&quot;,&quot;item&quot;:&quot;<data:blog.homepageUrl.canonical.jsonEscaped/>&quot;},{&quot;@type&quot;:&quot;ListItem&quot;,&quot;position&quot;:2,&quot;name&quot;:&quot;<b:if cond='data:post.labels'><data:post.labels.first.name.jsonEscaped/><b:else/><data:messages.posts/></b:if>&quot;,&quot;item&quot;:&quot;<b:if cond='data:post.labels'><data:post.labels.first.url.canonical.jsonEscaped/><b:else/><b:eval expr='data:blog.homepageUrl.canonical.jsonEscaped + &quot;search/&quot;'/></b:if>&quot;},{&quot;@type&quot;:&quot;ListItem&quot;,&quot;position&quot;:3,&quot;name&quot;:&quot;<data:post.title.jsonEscaped/>&quot;,&quot;item&quot;:&quot;<data:post.url.canonical.jsonEscaped/>&quot;}]}</script>
+        <script type='application/ld+json'>{&quot;@context&quot;:&quot;https://schema.org&quot;,&quot;@type&quot;:&quot;BreadcrumbList&quot;,&quot;itemListElement&quot;:[{&quot;@type&quot;:&quot;ListItem&quot;,&quot;position&quot;:1,&quot;name&quot;:&quot;<data:messages.home.jsonEscaped/>&quot;,&quot;item&quot;:&quot;<data:blog.homepageUrl.canonical.jsonEscaped/>&quot;},{&quot;@type&quot;:&quot;ListItem&quot;,&quot;position&quot;:2,&quot;name&quot;:&quot;<b:if cond='data:post.labels'><data:post.labels.first.name.jsonEscaped/><b:else/><data:messages.posts/></b:if>&quot;,&quot;item&quot;:&quot;<b:if cond='data:post.labels'><data:post.labels.first.url.canonical.jsonEscaped/><b:else/><b:eval expr='data:blog.homepageUrl.canonical.jsonEscaped + &quot;search/&quot;'/></b:if>&quot;},{&quot;@type&quot;:&quot;ListItem&quot;,&quot;position&quot;:3,&quot;name&quot;:&quot;<data:post.title.jsonEscaped/>&quot;,&quot;item&quot;:&quot;<data:post.url.canonical.jsonEscaped/>&quot;}]}</script>
       </b:if>
       <b:if cond='data:view.isPage'>
-        <script type='application/ld+json'>{&quot;@context&quot;:&quot;http://schema.org&quot;,&quot;@type&quot;:&quot;BreadcrumbList&quot;,&quot;itemListElement&quot;:[{&quot;@type&quot;:&quot;ListItem&quot;,&quot;position&quot;:1,&quot;name&quot;:&quot;<data:messages.home.jsonEscaped/>&quot;,&quot;item&quot;:&quot;<data:blog.homepageUrl.canonical.jsonEscaped/>&quot;},{&quot;@type&quot;:&quot;ListItem&quot;,&quot;position&quot;:2,&quot;name&quot;:&quot;<data:post.title.jsonEscaped/>&quot;,&quot;item&quot;:&quot;<data:post.url.canonical.jsonEscaped/>&quot;}]}</script>
+        <script type='application/ld+json'>{&quot;@context&quot;:&quot;https://schema.org&quot;,&quot;@type&quot;:&quot;BreadcrumbList&quot;,&quot;itemListElement&quot;:[{&quot;@type&quot;:&quot;ListItem&quot;,&quot;position&quot;:1,&quot;name&quot;:&quot;<data:messages.home.jsonEscaped/>&quot;,&quot;item&quot;:&quot;<data:blog.homepageUrl.canonical.jsonEscaped/>&quot;},{&quot;@type&quot;:&quot;ListItem&quot;,&quot;position&quot;:2,&quot;name&quot;:&quot;<data:post.title.jsonEscaped/>&quot;,&quot;item&quot;:&quot;<data:post.url.canonical.jsonEscaped/>&quot;}]}</script>
       </b:if>
     </b:includable>
     <b:includable id='postCategory' var='post'>
@@ -1717,7 +1718,7 @@ ul.share-b{grid-gap:10px}
     <b:includable id='postLocation'><b:comment>Replaced</b:comment></b:includable>
     <b:includable id='postMeta' var='post'>
       <b:if cond='data:view.isPost'>
-        <script type='application/ld+json'>{&quot;@context&quot;:&quot;https://schema.org&quot;,&quot;@type&quot;:&quot;NewsArticle&quot;,&quot;mainEntityOfPage&quot;:{&quot;@type&quot;:&quot;WebPage&quot;,&quot;@id&quot;:&quot;<data:post.url.canonical.jsonEscaped/>&quot;},&quot;headline&quot;:&quot;<data:post.title.jsonEscaped/>&quot;,&quot;description&quot;:&quot;<data:post.snippets.short.jsonEscaped/>&quot;,&quot;datePublished&quot;:&quot;<data:post.date.iso8601.jsonEscaped/>&quot;,&quot;dateModified&quot;:&quot;<data:post.lastUpdated.iso8601.jsonEscaped/>&quot;,&quot;image&quot;:{&quot;@type&quot;:&quot;ImageObject&quot;,<b:if cond='data:post.featuredImage.isResizable'>&quot;url&quot;:&quot;<b:eval expr='resizeImage(data:post.featuredImage, 1200, &quot;1200:675&quot;)'/>&quot;,&quot;height&quot;:675,&quot;width&quot;:1200<b:else/>&quot;url&quot;:&quot;https://lh3.googleusercontent.com/ULB6iBuCeTVvSjjjU1A-O8e9ZpVba6uvyhtiWRti_rBAs9yMYOFBujxriJRZ-A=w1200&quot;,&quot;height&quot;:348,&quot;width&quot;:1200</b:if>},&quot;author&quot;:{&quot;@type&quot;:&quot;Person&quot;,&quot;name&quot;:&quot;<data:post.author.name.jsonEscaped/>&quot;},&quot;publisher&quot;:{&quot;@type&quot;:&quot;Organization&quot;,&quot;name&quot;:&quot;Blogger&quot;,&quot;logo&quot;:{&quot;@type&quot;:&quot;ImageObject&quot;,&quot;url&quot;:&quot;https://lh3.googleusercontent.com/ULB6iBuCeTVvSjjjU1A-O8e9ZpVba6uvyhtiWRti_rBAs9yMYOFBujxriJRZ-A=h60&quot;,&quot;width&quot;:206,&quot;height&quot;:60}}}</script>
+        <script type='application/ld+json'>{&quot;@context&quot;:&quot;https://schema.org&quot;,&quot;@type&quot;:&quot;BlogPosting&quot;,&quot;mainEntityOfPage&quot;:{&quot;@type&quot;:&quot;WebPage&quot;,&quot;@id&quot;:&quot;<data:post.url.canonical.jsonEscaped/>&quot;},&quot;headline&quot;:&quot;<data:post.title.jsonEscaped/>&quot;,&quot;description&quot;:&quot;<data:post.snippets.short.jsonEscaped/>&quot;,&quot;datePublished&quot;:&quot;<data:post.date.iso8601.jsonEscaped/>&quot;,&quot;dateModified&quot;:&quot;<data:post.lastUpdated.iso8601.jsonEscaped/>&quot;,<b:if cond='data:post.featuredImage.isResizable'>&quot;image&quot;:{&quot;@type&quot;:&quot;ImageObject&quot;,&quot;url&quot;:&quot;<b:eval expr='resizeImage(data:post.featuredImage, 1200, &quot;1200:675&quot;)'/>&quot;,&quot;height&quot;:675,&quot;width&quot;:1200},</b:if>&quot;author&quot;:{&quot;@type&quot;:&quot;Person&quot;,&quot;name&quot;:&quot;<data:post.author.name.jsonEscaped/>&quot;},&quot;publisher&quot;:{&quot;@type&quot;:&quot;Organization&quot;,&quot;name&quot;:&quot;iBaguette&quot;,&quot;url&quot;:&quot;https://www.ibaguette.com/&quot;}}</script>
       </b:if>
     </b:includable>
     <b:includable id='postMetadataJSONImage'><b:comment>Replaced</b:comment></b:includable>
@@ -1736,10 +1737,10 @@ ul.share-b{grid-gap:10px}
       <div class='post-share'>
         <ul class='share-a social color'>
           <li class='share-label'><span class='sl-btn btn'><i class='sl-ico'/></span></li>
-          <li class='facebook has-span'><a class='fa-facebook btn pbt-window' data-height='500' data-width='520' expr:data-url='&quot;https://www.facebook.com/sharer.php?u=&quot; + data:post.url.canonical' href='#' rel='nofollow noopener' title='Facebook'><span>Facebook</span></a></li>
-          <li class='twitter has-span'><a class='fa-twitter btn pbt-window' data-height='520' data-width='860' expr:data-url='&quot;https://twitter.com/intent/tweet?url=&quot; + data:post.url.canonical + &quot;&amp;text=&quot; + data:post.title.jsEscaped' href='#' rel='nofollow noopener' title='Twitter'><span>Twitter</span></a></li>
-          <li class='whatsapp'><a class='fa-whatsapp btn pbt-window' data-height='520' data-width='860' expr:data-url='&quot;https://api.whatsapp.com/send?text=&quot; + data:post.title.jsEscaped + &quot; | &quot; + data:post.url.canonical' href='#' rel='nofollow noopener' title='WhatsApp'/></li>
-          <li class='email'><a class='fa-email btn pbt-window' data-height='500' data-width='520' expr:data-url='&quot;mailto:?subject=&quot; + data:post.title.jsEscaped + &quot;&amp;body=&quot; + data:post.url.canonical' href='#' rel='nofollow noopener' title='Email'/></li>
+          <li class='facebook has-span'><a class='fa-facebook btn' expr:href='&quot;https://www.facebook.com/sharer.php?u=&quot; + data:post.url.canonical' rel='nofollow noopener noreferrer' target='_blank' title='Facebook'><span>Facebook</span></a></li>
+          <li class='twitter has-span'><a class='fa-twitter btn' expr:href='&quot;https://twitter.com/intent/tweet?url=&quot; + data:post.url.canonical + &quot;&amp;text=&quot; + data:post.title.jsEscaped' rel='nofollow noopener noreferrer' target='_blank' title='Twitter'><span>Twitter</span></a></li>
+          <li class='whatsapp'><a class='fa-whatsapp btn' expr:href='&quot;https://api.whatsapp.com/send?text=&quot; + data:post.title.jsEscaped + &quot; | &quot; + data:post.url.canonical' rel='nofollow noopener noreferrer' target='_blank' title='WhatsApp'/></li>
+          <li class='email'><a class='fa-email btn' expr:href='&quot;mailto:?subject=&quot; + data:post.title.jsEscaped + &quot;&amp;body=&quot; + data:post.url.canonical' rel='nofollow' title='Email'/></li>
           <li class='show-more'><button class='btn' expr:aria-label='data:messages.showMore'/></li>
         </ul>
       </div>
@@ -2314,12 +2315,8 @@ ul.share-b{grid-gap:10px}
       <!-- Ajax Pagination on Index -->
       <div class='blog-pager' id='blog-pager'>
         <b:if cond='data:olderPageUrl'>
-          <!-- Modified by Draggie. -->
-          <!-- Note: due to an issue involving HTTP not HTTPS 'mixed=content', the link below has to be hardcoded -->
-          <!-- Aim to fix this in the future. May be a Blogger issue, Cloudflare proxy... etc. -->
-          <!-- fixed by upgrading requests? -->
-          <a class='blog-pager-older-link load-more btn' expr:data-load='data:olderPageUrl.canonical' href='#' id='xdfcb-load-more-link'><b:include data='{ message: &quot;loadMorePosts&quot; }' name='theme-custom-lang'/></a>
-          <span class='loading'><div class='loader'/></span>
+          <a class='blog-pager-older-link load-more btn' expr:data-load='data:olderPageUrl.canonical' expr:href='data:olderPageUrl.canonical' id='xdfcb-load-more-link'><b:include data='{ message: &quot;loadMorePosts&quot; }' name='theme-custom-lang'/></a>
+          <span class='loading'><span class='loader'/></span>
           <span class='no-more load-more btn'><data:messages.noResultsFound/></span>
           <b:else/>
           <span class='no-more load-more btn show'><data:messages.noResultsFound/></span>
@@ -2508,10 +2505,10 @@ ul.share-b{grid-gap:10px}
       <!-- Post Breadcrumbs -->
       <b:if cond='data:view.isPost'>
         <b:if cond='data:skin.vars.breadcrumb == &quot;1px&quot;'><nav id='breadcrumb'><a class='home' expr:href='data:blog.homepageUrl'><data:messages.home/></a><b:if cond='data:post.labels'><em class='separator'/><a class='label' expr:href='data:post.labels.first.url'><data:post.labels.first.name/></a></b:if></nav></b:if>
-        <script type='application/ld+json'>{&quot;@context&quot;:&quot;http://schema.org&quot;,&quot;@type&quot;:&quot;BreadcrumbList&quot;,&quot;itemListElement&quot;:[{&quot;@type&quot;:&quot;ListItem&quot;,&quot;position&quot;:1,&quot;name&quot;:&quot;<data:messages.home.jsonEscaped/>&quot;,&quot;item&quot;:&quot;<data:blog.homepageUrl.canonical.jsonEscaped/>&quot;},{&quot;@type&quot;:&quot;ListItem&quot;,&quot;position&quot;:2,&quot;name&quot;:&quot;<b:if cond='data:post.labels'><data:post.labels.first.name.jsonEscaped/><b:else/><data:messages.posts/></b:if>&quot;,&quot;item&quot;:&quot;<b:if cond='data:post.labels'><data:post.labels.first.url.canonical.jsonEscaped/><b:else/><b:eval expr='data:blog.homepageUrl.canonical.jsonEscaped + &quot;search/&quot;'/></b:if>&quot;},{&quot;@type&quot;:&quot;ListItem&quot;,&quot;position&quot;:3,&quot;name&quot;:&quot;<data:post.title.jsonEscaped/>&quot;,&quot;item&quot;:&quot;<data:post.url.canonical.jsonEscaped/>&quot;}]}</script>
+        <script type='application/ld+json'>{&quot;@context&quot;:&quot;https://schema.org&quot;,&quot;@type&quot;:&quot;BreadcrumbList&quot;,&quot;itemListElement&quot;:[{&quot;@type&quot;:&quot;ListItem&quot;,&quot;position&quot;:1,&quot;name&quot;:&quot;<data:messages.home.jsonEscaped/>&quot;,&quot;item&quot;:&quot;<data:blog.homepageUrl.canonical.jsonEscaped/>&quot;},{&quot;@type&quot;:&quot;ListItem&quot;,&quot;position&quot;:2,&quot;name&quot;:&quot;<b:if cond='data:post.labels'><data:post.labels.first.name.jsonEscaped/><b:else/><data:messages.posts/></b:if>&quot;,&quot;item&quot;:&quot;<b:if cond='data:post.labels'><data:post.labels.first.url.canonical.jsonEscaped/><b:else/><b:eval expr='data:blog.homepageUrl.canonical.jsonEscaped + &quot;search/&quot;'/></b:if>&quot;},{&quot;@type&quot;:&quot;ListItem&quot;,&quot;position&quot;:3,&quot;name&quot;:&quot;<data:post.title.jsonEscaped/>&quot;,&quot;item&quot;:&quot;<data:post.url.canonical.jsonEscaped/>&quot;}]}</script>
       </b:if>
       <b:if cond='data:view.isPage'>
-        <script type='application/ld+json'>{&quot;@context&quot;:&quot;http://schema.org&quot;,&quot;@type&quot;:&quot;BreadcrumbList&quot;,&quot;itemListElement&quot;:[{&quot;@type&quot;:&quot;ListItem&quot;,&quot;position&quot;:1,&quot;name&quot;:&quot;<data:messages.home.jsonEscaped/>&quot;,&quot;item&quot;:&quot;<data:blog.homepageUrl.canonical.jsonEscaped/>&quot;},{&quot;@type&quot;:&quot;ListItem&quot;,&quot;position&quot;:2,&quot;name&quot;:&quot;<data:post.title.jsonEscaped/>&quot;,&quot;item&quot;:&quot;<data:post.url.canonical.jsonEscaped/>&quot;}]}</script>
+        <script type='application/ld+json'>{&quot;@context&quot;:&quot;https://schema.org&quot;,&quot;@type&quot;:&quot;BreadcrumbList&quot;,&quot;itemListElement&quot;:[{&quot;@type&quot;:&quot;ListItem&quot;,&quot;position&quot;:1,&quot;name&quot;:&quot;<data:messages.home.jsonEscaped/>&quot;,&quot;item&quot;:&quot;<data:blog.homepageUrl.canonical.jsonEscaped/>&quot;},{&quot;@type&quot;:&quot;ListItem&quot;,&quot;position&quot;:2,&quot;name&quot;:&quot;<data:post.title.jsonEscaped/>&quot;,&quot;item&quot;:&quot;<data:post.url.canonical.jsonEscaped/>&quot;}]}</script>
       </b:if>
     </b:includable>
             <b:includable id='postCategory' var='post'>
@@ -2580,7 +2577,7 @@ ul.share-b{grid-gap:10px}
             <b:includable id='postLocation'><b:comment>Replaced</b:comment></b:includable>
             <b:includable id='postMeta' var='post'>
       <b:if cond='data:view.isPost'>
-        <script type='application/ld+json'>{&quot;@context&quot;:&quot;https://schema.org&quot;,&quot;@type&quot;:&quot;NewsArticle&quot;,&quot;mainEntityOfPage&quot;:{&quot;@type&quot;:&quot;WebPage&quot;,&quot;@id&quot;:&quot;<data:post.url.canonical.jsonEscaped/>&quot;},&quot;headline&quot;:&quot;<data:post.title.jsonEscaped/>&quot;,&quot;description&quot;:&quot;<data:post.snippets.short.jsonEscaped/>&quot;,&quot;datePublished&quot;:&quot;<data:post.date.iso8601.jsonEscaped/>&quot;,&quot;dateModified&quot;:&quot;<data:post.lastUpdated.iso8601.jsonEscaped/>&quot;,&quot;image&quot;:{&quot;@type&quot;:&quot;ImageObject&quot;,<b:if cond='data:post.featuredImage.isResizable'>&quot;url&quot;:&quot;<b:eval expr='resizeImage(data:post.featuredImage, 1200, &quot;1200:675&quot;)'/>&quot;,&quot;height&quot;:675,&quot;width&quot;:1200<b:else/>&quot;url&quot;:&quot;https://lh3.googleusercontent.com/ULB6iBuCeTVvSjjjU1A-O8e9ZpVba6uvyhtiWRti_rBAs9yMYOFBujxriJRZ-A=w1200&quot;,&quot;height&quot;:348,&quot;width&quot;:1200</b:if>},&quot;author&quot;:{&quot;@type&quot;:&quot;Person&quot;,&quot;name&quot;:&quot;<data:post.author.name.jsonEscaped/>&quot;},&quot;publisher&quot;:{&quot;@type&quot;:&quot;Organization&quot;,&quot;name&quot;:&quot;Blogger&quot;,&quot;logo&quot;:{&quot;@type&quot;:&quot;ImageObject&quot;,&quot;url&quot;:&quot;https://lh3.googleusercontent.com/ULB6iBuCeTVvSjjjU1A-O8e9ZpVba6uvyhtiWRti_rBAs9yMYOFBujxriJRZ-A=h60&quot;,&quot;width&quot;:206,&quot;height&quot;:60}}}</script>
+        <script type='application/ld+json'>{&quot;@context&quot;:&quot;https://schema.org&quot;,&quot;@type&quot;:&quot;BlogPosting&quot;,&quot;mainEntityOfPage&quot;:{&quot;@type&quot;:&quot;WebPage&quot;,&quot;@id&quot;:&quot;<data:post.url.canonical.jsonEscaped/>&quot;},&quot;headline&quot;:&quot;<data:post.title.jsonEscaped/>&quot;,&quot;description&quot;:&quot;<data:post.snippets.short.jsonEscaped/>&quot;,&quot;datePublished&quot;:&quot;<data:post.date.iso8601.jsonEscaped/>&quot;,&quot;dateModified&quot;:&quot;<data:post.lastUpdated.iso8601.jsonEscaped/>&quot;,<b:if cond='data:post.featuredImage.isResizable'>&quot;image&quot;:{&quot;@type&quot;:&quot;ImageObject&quot;,&quot;url&quot;:&quot;<b:eval expr='resizeImage(data:post.featuredImage, 1200, &quot;1200:675&quot;)'/>&quot;,&quot;height&quot;:675,&quot;width&quot;:1200},</b:if>&quot;author&quot;:{&quot;@type&quot;:&quot;Person&quot;,&quot;name&quot;:&quot;<data:post.author.name.jsonEscaped/>&quot;},&quot;publisher&quot;:{&quot;@type&quot;:&quot;Organization&quot;,&quot;name&quot;:&quot;iBaguette&quot;,&quot;url&quot;:&quot;https://www.ibaguette.com/&quot;}}</script>
       </b:if>
     </b:includable>
             <b:includable id='postMetadataJSONImage'><b:comment>Replaced</b:comment></b:includable>
@@ -2599,10 +2596,10 @@ ul.share-b{grid-gap:10px}
       <div class='post-share'>
         <ul class='share-a social color'>
           <li class='share-label'><span class='sl-btn btn'><i class='sl-ico'/></span></li>
-          <li class='facebook has-span'><a class='fa-facebook btn pbt-window' data-height='500' data-width='520' expr:data-url='&quot;https://www.facebook.com/sharer.php?u=&quot; + data:post.url.canonical' href='#' rel='nofollow noopener' title='Facebook'><span>Facebook</span></a></li>
-          <li class='twitter has-span'><a class='fa-twitter btn pbt-window' data-height='520' data-width='860' expr:data-url='&quot;https://twitter.com/intent/tweet?url=&quot; + data:post.url.canonical + &quot;&amp;text=&quot; + data:post.title.jsEscaped' href='#' rel='nofollow noopener' title='Twitter'><span>Twitter</span></a></li>
-          <li class='whatsapp'><a class='fa-whatsapp btn pbt-window' data-height='520' data-width='860' expr:data-url='&quot;https://api.whatsapp.com/send?text=&quot; + data:post.title.jsEscaped + &quot; | &quot; + data:post.url.canonical' href='#' rel='nofollow noopener' title='WhatsApp'/></li>
-          <li class='email'><a class='fa-email btn pbt-window' data-height='500' data-width='520' expr:data-url='&quot;mailto:?subject=&quot; + data:post.title.jsEscaped + &quot;&amp;body=&quot; + data:post.url.canonical' href='#' rel='nofollow noopener' title='Email'/></li>
+          <li class='facebook has-span'><a class='fa-facebook btn' expr:href='&quot;https://www.facebook.com/sharer.php?u=&quot; + data:post.url.canonical' rel='nofollow noopener noreferrer' target='_blank' title='Facebook'><span>Facebook</span></a></li>
+          <li class='twitter has-span'><a class='fa-twitter btn' expr:href='&quot;https://twitter.com/intent/tweet?url=&quot; + data:post.url.canonical + &quot;&amp;text=&quot; + data:post.title.jsEscaped' rel='nofollow noopener noreferrer' target='_blank' title='Twitter'><span>Twitter</span></a></li>
+          <li class='whatsapp'><a class='fa-whatsapp btn' expr:href='&quot;https://api.whatsapp.com/send?text=&quot; + data:post.title.jsEscaped + &quot; | &quot; + data:post.url.canonical' rel='nofollow noopener noreferrer' target='_blank' title='WhatsApp'/></li>
+          <li class='email'><a class='fa-email btn' expr:href='&quot;mailto:?subject=&quot; + data:post.title.jsEscaped + &quot;&amp;body=&quot; + data:post.url.canonical' rel='nofollow' title='Email'/></li>
           <li class='show-more'><button class='btn' expr:aria-label='data:messages.showMore'/></li>
         </ul>
       </div>
@@ -3101,7 +3098,7 @@ ul.share-b{grid-gap:10px}
 </b:includable>
             <b:includable id='googlePlusShare'>
   <div class='goog-inline-block google-plus-share-container'>
-    <g:plusone annotation='inline' expr:href='data:originalUrl.canonical.http' size='medium' source='blogger:blog:plusone'/>
+    <b:comment>Google+ was discontinued. Keep this legacy includable inert.</b:comment>
   </div>
 </b:includable>
             <b:includable id='headerByline'>
@@ -3162,7 +3159,7 @@ ul.share-b{grid-gap:10px}
         <div class='post-content'>
           <a class='post-image-link' expr:href='data:post.url'>
             <b:if cond='data:post.featuredImage'>
-              <img as='image' class='post-thumb' expr:alt='data:post.title' expr:src='resizeImage(data:post.featuredImage, 72, &quot;1:1&quot;)' rel='preload'/>
+              <img class='post-thumb' decoding='async' expr:alt='data:post.title' expr:src='resizeImage(data:post.featuredImage, 72, &quot;1:1&quot;)'/>
               <b:else/>
               <img class='post-thumb' expr:alt='data:post.title' src='https://cdn.ibaguette.com/mainsite/no-img.png'/>
             </b:if>
@@ -3716,7 +3713,7 @@ height: 100%;
                  <div class='post-image-wrap'>
                   <a class='post-image-link' expr:href='data:post.url'>
             <b:if cond='data:post.featuredImage'>
-              <img as='image' class='post-thumb' expr:alt='data:post.title' expr:src='resizeImage(data:post.featuredImage, 72, &quot;1:1&quot;)' rel='preload'/>
+              <img class='post-thumb' decoding='async' expr:alt='data:post.title' expr:src='resizeImage(data:post.featuredImage, 72, &quot;1:1&quot;)'/>
               <b:else/>
               <img class='post-thumb' expr:alt='data:post.title' src='https://cdn.ibaguette.com/mainsite/no-img.png'/>
             </b:if>
@@ -3749,7 +3746,7 @@ height: 100%;
 </b:includable>
             <b:includable id='googlePlusShare'>
   <div class='goog-inline-block google-plus-share-container'>
-    <g:plusone annotation='inline' expr:href='data:originalUrl.canonical.http' size='medium' source='blogger:blog:plusone'/>
+    <b:comment>Google+ was discontinued. Keep this legacy includable inert.</b:comment>
   </div>
 </b:includable>
             <b:includable id='headerByline'>
@@ -4073,53 +4070,19 @@ height: 100%;
     </b:widget>
   </b:section>
 </b:if>
-<!-- Main Scripts -->
-<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js' type='text/javascript'/>
+<!-- Theme variables and lightweight vanilla-JavaScript implementation below.
+     Removed jQuery 3.5.1 and four unused jQuery plugin definitions. -->
 <b:include name='theme-variables'/>
-<script type='text/javascript'>
-//<![CDATA[
-/*! Theia Sticky Sidebar | v1.5.0 - https://github.com/WeCodePixels/theia-sticky-sidebar */
-!function(i){i.fn.theiaStickySidebar=function(t){var e,o,a,s,n;function d(t,e){return!0===t.initialized||!(i("body").width()<t.minWidth)&&(function(t,e){t.initialized=!0,0===i("#theia-sticky-sidebar-stylesheet-"+t.namespace).length&&i("head").append(i('<style id="theia-sticky-sidebar-stylesheet-'+t.namespace+'">.theiaStickySidebar:after {content: ""; display: table; clear: both;}</style>')),e.each(function(){var e={};if(e.sidebar=i(this),e.options=t||{},e.container=i(e.options.containerSelector),0==e.container.length&&(e.container=e.sidebar.parent()),e.sidebar.parent().css("-webkit-transform","none"),e.sidebar.css({position:e.options.defaultPosition,overflow:"visible","-webkit-box-sizing":"border-box","-moz-box-sizing":"border-box","box-sizing":"border-box"}),e.stickySidebar=e.sidebar.find(".theiaStickySidebar"),0==e.stickySidebar.length){var o=/(?:text|application)\/(?:x-)?(?:javascript|ecmascript)/i;e.sidebar.find("script").filter(function(i,t){return 0===t.type.length||t.type.match(o)}).remove(),e.stickySidebar=i("<div>").addClass("theiaStickySidebar").append(e.sidebar.children()),e.sidebar.append(e.stickySidebar)}e.marginBottom=parseInt(e.sidebar.css("margin-bottom")),e.paddingTop=parseInt(e.sidebar.css("padding-top")),e.paddingBottom=parseInt(e.sidebar.css("padding-bottom"));var a,s,n,d=e.stickySidebar.offset().top,c=e.stickySidebar.outerHeight();function p(){e.fixedScrollTop=0,e.sidebar.css({"min-height":"1px"}),e.stickySidebar.css({position:"static",width:"",transform:"none"})}e.stickySidebar.css("padding-top",1),e.stickySidebar.css("padding-bottom",1),d-=e.stickySidebar.offset().top,c=e.stickySidebar.outerHeight()-c-d,0==d?(e.stickySidebar.css("padding-top",0),e.stickySidebarPaddingTop=0):e.stickySidebarPaddingTop=1,0==c?(e.stickySidebar.css("padding-bottom",0),e.stickySidebarPaddingBottom=0):e.stickySidebarPaddingBottom=1,e.previousScrollTop=null,e.fixedScrollTop=0,p(),e.onScroll=function(e){if(e.stickySidebar.is(":visible"))if(i("body").width()<e.options.minWidth)p();else{if(e.options.disableOnResponsiveLayouts)if(e.sidebar.outerWidth("none"==e.sidebar.css("float"))+50>e.container.width())return void p();var o,a,s=i(document).scrollTop(),n="static";if(s>=e.sidebar.offset().top+(e.paddingTop-e.options.additionalMarginTop)){var d,c=e.paddingTop+t.additionalMarginTop,b=e.paddingBottom+e.marginBottom+t.additionalMarginBottom,l=e.sidebar.offset().top,h=e.sidebar.offset().top+(o=e.container,a=o.height(),o.children().each(function(){a=Math.max(a,i(this).height())}),a),f=0+t.additionalMarginTop;d=e.stickySidebar.outerHeight()+c+b<i(window).height()?f+e.stickySidebar.outerHeight():i(window).height()-e.marginBottom-e.paddingBottom-t.additionalMarginBottom;var g=l-s+e.paddingTop,S=h-s-e.paddingBottom-e.marginBottom,m=e.stickySidebar.offset().top-s,y=e.previousScrollTop-s;"fixed"==e.stickySidebar.css("position")&&"modern"==e.options.sidebarBehavior&&(m+=y),"stick-to-top"==e.options.sidebarBehavior&&(m=t.additionalMarginTop),"stick-to-bottom"==e.options.sidebarBehavior&&(m=d-e.stickySidebar.outerHeight()),m=0<y?Math.min(m,f):Math.max(m,d-e.stickySidebar.outerHeight()),m=Math.max(m,g),m=Math.min(m,S-e.stickySidebar.outerHeight());var u=e.container.height()==e.stickySidebar.outerHeight();n=!u&&m==f||!u&&m==d-e.stickySidebar.outerHeight()?"fixed":s+m-e.sidebar.offset().top-e.paddingTop<=t.additionalMarginTop?"static":"absolute"}if("fixed"==n){var k=i(document).scrollLeft();e.stickySidebar.css({position:"fixed",width:r(e.stickySidebar)+"px",transform:"translateY("+m+"px)",left:e.sidebar.offset().left+parseInt(e.sidebar.css("padding-left"))-k+"px",top:"0px"})}else if("absolute"==n){var v={};"absolute"!=e.stickySidebar.css("position")&&(v.position="absolute",v.transform="translateY("+(s+m-e.sidebar.offset().top-e.stickySidebarPaddingTop-e.stickySidebarPaddingBottom)+"px)",v.top="0px"),v.width=r(e.stickySidebar)+"px",v.left="",e.stickySidebar.css(v)}else"static"==n&&p();"static"!=n&&1==e.options.updateSidebarHeight&&e.sidebar.css({"min-height":e.stickySidebar.outerHeight()+e.stickySidebar.offset().top-e.sidebar.offset().top+e.paddingBottom}),e.previousScrollTop=s}},e.onScroll(e),i(document).on("scroll."+e.options.namespace,(a=e,function(){a.onScroll(a)})),i(window).on("resize."+e.options.namespace,(s=e,function(){s.stickySidebar.css({position:"static"}),s.onScroll(s)})),"undefined"!=typeof ResizeSensor&&new ResizeSensor(e.stickySidebar[0],(n=e,function(){n.onScroll(n)}))})}(t,e),!0)}function r(i){var t;try{t=i[0].getBoundingClientRect().width}catch(i){}return void 0===t&&(t=i.width()),t}return(t=i.extend({containerSelector:"",additionalMarginTop:0,additionalMarginBottom:0,updateSidebarHeight:!0,minWidth:0,disableOnResponsiveLayouts:!0,sidebarBehavior:"modern",defaultPosition:"relative",namespace:"TSS"},t)).additionalMarginTop=parseInt(t.additionalMarginTop)||0,t.additionalMarginBottom=parseInt(t.additionalMarginBottom)||0,d(e=t,this)||(console.log("TSS: Body width smaller than options.minWidth. Init is delayed."),i(document).on("scroll."+e.namespace,(s=e,n=this,function(t){d(s,n)&&i(this).unbind(t)})),i(window).on("resize."+e.namespace,(o=e,a=this,function(t){d(o,a)&&i(this).unbind(t)}))),this}}(jQuery);
-
-/*! pbtMenu by Pro Blogger Templates | v1.3.0 - https://probloggertemplates.com */
-!function(e){e.fn.pbtMenu=function(){return this.each(function(){for(var t=e(this),a=t.find(".widget ul > li").children("a"),n=a.length,r=0;r<n;r++){var i=a.eq(r),s=i.text();if("_"!==s.charAt(0))if("_"===a.eq(r+1).text().charAt(0)){var u=i.parent();u.append('<ul class="sub-menu sm-1"/>')}"_"===s.charAt(0)&&(i.text(s.replace("_","")),i.parent().appendTo(u.children(".sub-menu")))}for(r=0;r<n;r++){var c=a.eq(r),d=c.text();if("_"!==d.charAt(0))if("_"===a.eq(r+1).text().charAt(0)){var p=c.parent();p.append('<ul class="sub-menu sm-2"/>')}"_"===d.charAt(0)&&(c.text(d.replace("_","")),c.parent().appendTo(p.children(".sm-2")))}t.find(".sub-menu").parent("li").addClass("has-sub"),t.children(".widget").addClass("is-ready")})}}(jQuery);
-
-/*! pbtLazy by Pro Blogger Templates | v1.4.0 - https://probloggertemplates.com modified by iBaguette */
-!function(o){o.fn.pbtLazy=function(n){return n=o.extend({onScroll:!0},n),this.each(function(t,c,e){var r=o(this),a=o(window),h=r.data("src"),l=r.width()>=1?r.width():1,s=(l=Math.round(l+l/10),r.height()>=1?r.height():1),i="w"+l+"-h"+(s=Math.round(s+s/10))+"-p-k-no-nu";function u(){var o=new Image;o.onload=function(){r.attr("style","background-image:url("+this.src+")").addClass("should-lazy-load")},o.src=t}h.match("resources.blogblog.com")&&(h="undefined"!=typeof noThumbnail?noThumbnail:"https://cdn.ibaguette.com/mainsite/no-img.png"),h.match(".googleusercontent.com")&&h.match("=")&&(e=h.split("="),h=e[1]&&""!=e[1].trim()?e[0]+"=w72-h72-p-k-no-nu":h),h.match(".googleusercontent.com")&&!h.match("=")&&(h+="=w72-h72-p-k-no-nu"),t=h.match("/s72-c")?h.replace("/s72-c","/"+i):h.match("/w72-h")?h.replace("/w72-h72-p-k-no-nu","/"+i):h.match("=w72-h")?h.replace("=w72-h72-p-k-no-nu","="+i):h,1==n.onScroll?a.on("load resize scroll",function o(){a.scrollTop()+a.height()>=r.offset().top&&(a.off("load resize scroll",o),u())}).trigger("scroll"):a.on("load",function o(){a.off("load",o),u()}).trigger("load")})}}(jQuery);
-
-/*! jQuery replaceText | v1.1.0 - https://benalman.com/projects/jquery-replacetext-plugin */
-!function(e){e.fn.replaceText=function(n,t,i){return this.each(function(){var o,r,l=this.firstChild,u=[];if(l)do{3===l.nodeType&&(r=(o=l.nodeValue).replace(n,t))!==o&&(!i&&/</.test(r)?(e(l).before(r),u.push(l)):l.nodeValue=r)}while(l=l.nextSibling);u.length&&e(u).remove()})}}(jQuery);
-//]]>
-</script>
 <!-- Blogger Scripts -->
 <script>/*<![CDATA[*/ cookieChoices = {}; /*]]>*/</script> <!-- This disables the cookie choices popup as we have it in Google Adsense -->
 
 <script type='text/javascript'>
 //<![CDATA[
-/*!
- * =-=-=-=-= AI-Generate Code Below! =-=-=-=-= 
- *
- *
- *
- * Clean Theme Script (vanilla JS) — v3
- *
- * Fixes vs v2:
- * 1) Desktop nested dropdowns: adds depth classes to submenus/parents to match original style CSS expectations.
- *    - ul.sub-menu.sub-menu-1, ul.sub-menu.sub-menu-2, ...
- *    - li.has-sub.has-sub-1, li.has-sub.has-sub-2, ...
- *    If your CSS doesn't already position 2nd level to the right, see the CSS snippet below.
- *
- * 2) Mobile sidebar dropdowns: robust submenu toggling for any depth.
- *    - Ensures submenu toggle buttons exist at every parent
- *    - Uses class toggles + inline display fallback (works even if CSS differs)
- *
- * 3) Thumbnails blank: fixes opacity/class expectations and Blogger image sizing.
- *    - Keeps/forces .should-lazy-load on thumbnails so existing theme CSS can fade/show them
- *    - Adds .lazy-loaded and forces inline opacity=1 as a safety net
- *    - Upscales Blogger URLs like "...=w72-h72-..." to the element's actual rendered size (bounded)
- *
- * 4) Social button text: data-text can be "1", "true", true, etc.
- *    - If no "#label" in href, falls back to title/alt/aria-label/class fa-xxx
+/*
+ * iBaguette: site behaviour (plain JavaScript)
+ * Features: menus, search, accessible share links/modal, thumbnails,
+ * Blogger related posts and progressive-enhancement Load More.
+ * Keep this script dependency-free; widget data and settings are above.
  */
 
 (() => {
@@ -4250,33 +4213,32 @@ height: 100%;
     el.removeAttribute("data-image");
   }
 
+  // Reuse one observer across initial content, Blogger widgets and appended posts.
+  const lazyObserver = "IntersectionObserver" in window
+    ? new IntersectionObserver((entries) => {
+        for (const entry of entries) {
+          if (!entry.isIntersecting) continue;
+          revealLazy(entry.target);
+          lazyObserver.unobserve(entry.target);
+        }
+      }, { rootMargin: "250px 0px" })
+    : null;
+
   function initLazy(root = document) {
     const targets = $$(
       "img[data-src], img[data-lazy-src], img[data-srcset], " +
       "[data-bg], [data-image], span.thumbnail[data-src], [data-src]",
       root
     );
-    if (!targets.length) return;
 
-    // Fix already-present lazy-loaded spans that are invisible due to CSS opacity.
+    if (lazyObserver) targets.forEach(el => lazyObserver.observe(el));
+    else targets.forEach(revealLazy);
+
+    // Support thumbnails rendered by legacy Blogger widgets.
     $$(".thumbnail.lazy-loaded, .avatar.lazy-loaded", root).forEach(el => {
       el.classList.add("should-lazy-load");
       el.style.opacity = "1";
     });
-
-    if ("IntersectionObserver" in window) {
-      const io = new IntersectionObserver((entries) => {
-        for (const e of entries) {
-          if (!e.isIntersecting) continue;
-          revealLazy(e.target);
-          io.unobserve(e.target);
-        }
-      }, { rootMargin: "250px 0px" });
-
-      targets.forEach(el => io.observe(el));
-    } else {
-      targets.forEach(revealLazy);
-    }
   }
 
   // -------------------------
@@ -4346,6 +4308,7 @@ height: 100%;
         b.type = "button";
         b.className = "submenu-toggle btn";
         b.setAttribute("aria-label", "Toggle submenu");
+        b.setAttribute("aria-expanded", "false");
         a.insertAdjacentElement("afterend", b);
       }
 
@@ -4530,6 +4493,8 @@ height: 100%;
     const mobileNav = desktopNav.cloneNode(true);
     mobileNav.id = "mobile-nav";
     mobileNav.className = "mobile-nav";
+    // Cloning the desktop menu must not produce duplicate DOM IDs.
+    $$("[id]", mobileNav).forEach(el => el.removeAttribute("id"));
 
     // Ensure toggles exist at every depth
     ensureSubmenuToggleButtons(mobileNav);
@@ -4551,12 +4516,13 @@ height: 100%;
       const li = btn.closest("li");
       if (!li) return;
 
-      li.classList.toggle("expanded");
+      const expanded = li.classList.toggle("expanded");
+      btn.setAttribute("aria-expanded", String(expanded));
       const sub = li.querySelector(":scope > ul.sub-menu");
       if (!sub) return;
 
       // Inline fallback
-      sub.style.display = li.classList.contains("expanded") ? "block" : "none";
+      sub.style.display = expanded ? "block" : "none";
     });
   }
 
@@ -4593,7 +4559,12 @@ height: 100%;
         } catch { ok = false; }
 
         if (!ok) {
-          try { document.execCommand("copy"); } catch { /* ignore */ }
+          try { ok = document.execCommand("copy"); } catch { ok = false; }
+        }
+        if (!ok) {
+          console.warn("Copy link was not permitted by this browser.");
+          input.focus();
+          return;
         }
 
         wrap.classList.remove("copied-off");
@@ -4856,13 +4827,20 @@ height: 100%;
     const btn = $("#xdfcb-load-more-link");
     if (!btn) return;
 
-    let nextUrl = data(btn, "load");
-    if (nextUrl) btn.style.display = "";
+    let nextUrl = data(btn, "load") || btn.getAttribute("href");
+    let ajaxFailed = false;
+    if (nextUrl) {
+      btn.href = nextUrl;
+      btn.style.display = "";
+    }
 
     on(btn, "click", async (e) => {
+      // Without a page URL, do not intercept normal navigation.
+      if (!nextUrl || ajaxFailed) return;
       e.preventDefault();
-      if (!nextUrl) return;
+      if (btn.getAttribute("aria-busy") === "true") return;
 
+      btn.setAttribute("aria-busy", "true");
       btn.style.display = "none";
       const loading = $("#blog-pager .loading");
       if (loading) loading.style.display = "";
@@ -4875,15 +4853,15 @@ height: 100%;
         const doc = new DOMParser().parseFromString(html, "text/html");
         const incoming = doc.querySelector(".blog-posts");
         const here = $(".blog-posts");
-        if (incoming && here) {
-          $$(":scope .post", incoming).forEach(p => p.classList.add("fadeInUp"));
-          here.insertAdjacentHTML("beforeend", incoming.innerHTML);
-        }
+        if (!incoming || !here) throw new Error("No post container in next page");
+        $$(":scope .post", incoming).forEach(p => p.classList.add("fadeInUp"));
+        here.insertAdjacentHTML("beforeend", incoming.innerHTML);
 
         const nextBtn = doc.querySelector("#xdfcb-load-more-link");
         nextUrl = nextBtn ? (nextBtn.getAttribute("data-load") || nextBtn.dataset.load || "") : "";
 
         if (nextUrl) {
+          btn.href = nextUrl;
           btn.style.display = "";
         } else {
           const noMore = $("#blog-pager .no-more");
@@ -4891,9 +4869,16 @@ height: 100%;
         }
 
         initLazy(document);
-      } catch {
-        // silent fail
+      } catch (err) {
+        console.error("Unable to load more posts:", err);
+        ajaxFailed = true;
+        // The next click follows the ordinary Blogger pagination URL.
+        if (nextUrl) {
+          btn.href = nextUrl;
+          btn.style.display = "";
+        }
       } finally {
+        btn.removeAttribute("aria-busy");
         if (loading) loading.style.display = "none";
       }
     });
