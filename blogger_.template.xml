@@ -2272,15 +2272,11 @@ ul.share-b{grid-gap:10px}
             <b:widget-settings>
               <b:widget-setting name='showDateHeader'>false</b:widget-setting>
               <b:widget-setting name='commentLabel'>$type={blogger}</b:widget-setting>
-              <b:widget-setting name='style.textcolor'>#ffffff</b:widget-setting>
               <b:widget-setting name='showShareButtons'>true</b:widget-setting>
               <b:widget-setting name='authorLabel'>Written by:</b:widget-setting>
               <b:widget-setting name='showCommentLink'>true</b:widget-setting>
-              <b:widget-setting name='style.urlcolor'>#ffffff</b:widget-setting>
               <b:widget-setting name='showAuthor'>true</b:widget-setting>
-              <b:widget-setting name='style.linkcolor'>#ffffff</b:widget-setting>
               <b:widget-setting name='style.unittype'>TextAndImage</b:widget-setting>
-              <b:widget-setting name='style.bgcolor'>#ffffff</b:widget-setting>
               <b:widget-setting name='timestampLabel'>&#8226;</b:widget-setting>
               <b:widget-setting name='reactionsLabel'/>
               <b:widget-setting name='showAuthorProfile'>true</b:widget-setting>
@@ -2291,7 +2287,6 @@ ul.share-b{grid-gap:10px}
               <b:widget-setting name='showTimestamp'>true</b:widget-setting>
               <b:widget-setting name='postsPerAd'>1</b:widget-setting>
               <b:widget-setting name='showBacklinks'>false</b:widget-setting>
-              <b:widget-setting name='style.bordercolor'>#ffffff</b:widget-setting>
               <b:widget-setting name='showInlineAds'>true</b:widget-setting>
               <b:widget-setting name='showReactions'>false</b:widget-setting>
             </b:widget-settings>
@@ -2705,6 +2700,44 @@ ul.share-b{grid-gap:10px}
             <b:includable id='threadedCommentJs' var='post'><b:comment>Replaced</b:comment></b:includable>
             <b:includable id='threadedComments' var='post'><b:comment>Replaced</b:comment></b:includable>
             <b:includable id='threadedCommentsDisqus' var='post'><b:comment>Replaced</b:comment></b:includable>
+            <b:includable id='tooltipCss'>
+  <!-- LINT.IfChange -->
+  <style>
+    .post-body a.b-tooltip-container {
+      position: relative;
+      display: inline-block;
+    }
+
+    .post-body a.b-tooltip-container .b-tooltip {
+      display: block !important;
+      position: absolute;
+      top: 100%;
+      left: 50%;
+      transform: translate(-20%, 1px);
+      visibility: hidden;
+      opacity: 0;
+      z-index: 1;
+      transition: opacity 0.2s ease-in-out;
+    }
+
+    .post-body a.b-tooltip-container .b-tooltip iframe {
+      width: 200px;
+      height: 198px;
+      max-width: none;
+      border: none;
+      border-radius: 20px;
+      box-shadow: 1px 1px 3px 1px rgba(0, 0, 0, 0.2);
+    }
+
+    @media (hover: hover) {
+      .post-body a.b-tooltip-container:hover .b-tooltip {
+        visibility: visible;
+        opacity: 1;
+      }
+    }
+  </style>
+  <!-- LINT.ThenChange(//depot/google3/java/com/google/blogger/b2/layouts/widgets/v2-style.css) -->
+</b:includable>
           </b:widget>
         </b:section>
         <b:section cond='data:view.isLayoutMode or (data:view.isPost and (data:widgets.HTML any w =&gt; w.sectionId == &quot;xdfcb-related-posts&quot;))' id='xdfcb-related-posts' maxwidgets='1' name='Related Posts' showaddelement='yes'>
@@ -3909,12 +3942,7 @@ height: 100%;
           </b:widget>
           <b:widget id='AdSense1' locked='false' title='' type='AdSense' visible='true'>
             <b:widget-settings>
-              <b:widget-setting name='style.bgcolor'>#ffffff</b:widget-setting>
-              <b:widget-setting name='style.textcolor'>#ffffff</b:widget-setting>
               <b:widget-setting name='style.layout'>1x1</b:widget-setting>
-              <b:widget-setting name='style.bordercolor'>#ffffff</b:widget-setting>
-              <b:widget-setting name='style.urlcolor'>#ffffff</b:widget-setting>
-              <b:widget-setting name='style.linkcolor'>#ffffff</b:widget-setting>
               <b:widget-setting name='style.unittype'>TextAndImage</b:widget-setting>
             </b:widget-settings>
             <b:includable id='main'>
@@ -3993,7 +4021,7 @@ height: 100%;
             <b:widget-settings>
               <b:widget-setting name='link-3'>mailto:ibaguette-website-enquiries@ibaguette.com</b:widget-setting>
               <b:widget-setting name='sorting'>NONE</b:widget-setting>
-              <b:widget-setting name='link-4'>https://github.com/Draggie306/iBaguette/commit/44dbc85754b09f7fb0eea1d3509b742cac07f24b</b:widget-setting>
+              <b:widget-setting name='link-4'>https://github.com/Draggie306/iBaguette/commit/dbf8d9b83db4b89d7a30edbb0db8fa6ba46b004b</b:widget-setting>
               <b:widget-setting name='text-1'>About iBaguette</b:widget-setting>
               <b:widget-setting name='link-1'>https://www.ibaguette.com/2023/04/what-is-iBaguette.html</b:widget-setting>
               <b:widget-setting name='text-0'>Home</b:widget-setting>
@@ -4001,7 +4029,7 @@ height: 100%;
               <b:widget-setting name='text-3'>Contact Us</b:widget-setting>
               <b:widget-setting name='link-0'>/</b:widget-setting>
               <b:widget-setting name='text-2'><![CDATA[Privacy & Terms]]></b:widget-setting>
-              <b:widget-setting name='text-4'>Commit: 44dbc85</b:widget-setting>
+              <b:widget-setting name='text-4'>Commit: dbf8d9b</b:widget-setting>
             </b:widget-settings>
             <b:includable id='main' var='this'>
       <b:include name='widget-title'/>
